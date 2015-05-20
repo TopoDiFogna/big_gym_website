@@ -1,0 +1,35 @@
+/*Desktop e Laptop */
+/*@media only screen and (min-width : 1224px) { */
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .menu{
+        height: 200px;
+        width: 100%;
+
+    }
+
+    .submenu{
+        text-align: center;
+        display: inline-block;
+    }
+
+    #table{
+        table-layout: fixed;
+        width: 80%;
+    }
+    
+    td{
+        width: 3%;
+    }
+
+/*}*/
