@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jscript.js" type="text/javascript"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv5QoEh08JhcYkzaU6PTJA_D2a3NisYT0">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        console.log("inizio initialize()");
+        var mapOptions = {
+          center: { lat: 45.584000, lng: 9.275233},
+          zoom: 17
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+        console.log("finito lo script");
+    </script>
+    <title>Big Gym</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+<!--        <div id="gallery"></div>-->
+        <div class="submenu"><a href="index.html"><img src="img/logoBigBym.jpg"></a></div>
+        <div class="submenu" id="menutable"><table>
+            <tr>
+                <td><div class="submenu"><a href="index.html">HOME</a></div></td>
+                <td><div class="submenu"><a href="categoryList.html">Categorie</a></div></td>
+                <td><div class="submenu"><a href="corsi.html">Corsi</a></div></td>
+                <td><div class="submenu"><a href="istruttori.html">Istruttori</a></div></td>
+                <td><div class="submenu">Testimonial</div></td>
+                <td><div class="submenu">Attrezzature</div></td>
+                <td><div class="submenu">Oraio</div></td>
+                <td><div class="submenu">Iscrizioni <br>e corsi</div></td>
+                <td><div class="submenu"><a href="location.html">Dove siamo</a></div></td>
+            </tr>
+        </table>
+        </div>
+    </div><br>
+    <div class="content">
+        <div id="map-canvas"></div>
+    
+    
+    
+</div>
+</body>
+</html>
