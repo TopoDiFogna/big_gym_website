@@ -8,16 +8,20 @@
     </script>
     <script type="text/javascript">
       function initialize() {
-        console.log("inizio initialize()");
+        var myLatlng = new google.maps.LatLng(45.584000,9.275233);
         var mapOptions = {
-          center: { lat: 45.584000, lng: 9.275233},
+          center: myLatlng,
           zoom: 17
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Big Bym'
+        });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-        console.log("finito lo script");
     </script>
     <title>Big Gym</title>
 </head>
@@ -42,6 +46,10 @@
         </div>
     </div><br>
     <div class="content">
+        <div class="info">
+            <div id="address">Dove trovarci:<br>Via Napoleone, 2<br>Monza MB 20900</div>
+            <div id="numbers">Come Contattarci:<br>Telefono:039 2020453<br>Fax:420984092<br>E-Mail: biggym@palestreonline.com</div>
+        </div>
         <div id="map-canvas"></div>
     
     

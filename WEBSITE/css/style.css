@@ -50,6 +50,21 @@
     #map-canvas{
         height: 300px;
         width: 600px;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .content{
+        margin-left: 2%;
+        width: 100%;
+    }
+    
+    .info{
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #address{
+        margin-bottom: 40%;
     }
 
 /*}*/
