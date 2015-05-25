@@ -1,37 +1,41 @@
 /*Desktop e Laptop */
 /*@media only screen and (min-width : 1224px) { */
 
-    body{
+    /*body{
         padding: 0px;
         margin: 0px;
-    }
+    }*/
 
     #headerGallery{
-        width: 100%;
-        height: 300px;
+        height: 350px;
         background-color: greenyellow;
 
-        background-image: url("../img/overview1.jpg");
+        /*background-image: url("../img/overview1.jpg");*/
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;
         top: 0px;
         
     }
+
     #logohome{
         z-index: 2;
         position: absolute;
         top: 100px;
     }
+
+    /*
     #logo{
-        /*in altri schermi bisogna impostare 
-        vertical-align: top;*/
+        in altri schermi bisogna impostare 
+        vertical-align: top;
         display: inline-block;
         
-    }
-    table {
+    }*/
+
+
+   /* table {
         width: 100%;
-/*        border: 1px solid black;*/
+        border: 1px solid black;
         border-collapse: collapse;
         text-align: center;
     }
@@ -63,13 +67,13 @@
     }
 
     #address{
-        /*con cambio schermo allinearli a fianco*/
+        con cambio schermo allinearli a fianco
         margin-bottom: 40%;
     }
     #overview{
         text-align: center;
     }
-    /*text area della form di homepage*/
+    text area della form di homepage
     .scrollabletextarea{
         font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
         font-size: 82%;
@@ -78,4 +82,4 @@
         height: 50px;
     }
 
-/*}*/
+}*/
