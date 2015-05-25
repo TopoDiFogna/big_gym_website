@@ -14,7 +14,6 @@ function animateGallery(){
     }
 //    console.log(window.GIndex);
     
-    $("#gallery").css("background-image","url(./img/overview"+GIndex+".jpg)");
-    $("#gallery").css("background-size","cover");
-    
+    $("#headerGallery").css("background-image","url(./img/overview"+GIndex+".jpg)");
+    $("#headerGallery").css("background-size","contain");
 }

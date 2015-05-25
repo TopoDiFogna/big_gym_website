@@ -1,37 +1,96 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/jscript.js" type="text/javascript"></script>
-    <title>Big Gym</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="js/jscript.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <div class="menu">
-<!--        <div id="gallery"></div>-->
-        <div class="submenu"><a href="index.html"><img src="img/logoBigBym.jpg"></a></div>
-        <div class="submenu" id="menutable"><table>
-            <tr>
-                <td><div class="submenu"><a href="index.html">HOME</a></div></td>
-                <td><div class="submenu"><a href="categoryList.html">Categorie</a></div></td>
-                <td><div class="submenu"><a href="corsi.html">Corsi</a></div></td>
-                <td><div class="submenu"><a href="istruttori.html">Istruttori</a></div></td>
-                <td><div class="submenu">Testimonial</div></td>
-                <td><div class="submenu">Attrezzature</div></td>
-                <td><div class="submenu">Oraio</div></td>
-                <td><div class="submenu">Iscrizioni <br>e corsi</div></td>
-                <td><div class="submenu"><a href="location.html">Dove siamo</a></div></td>
-            </tr>
-        </table>
+    <nav class="navbar navbar-default">
+        <div id="headerGallery"></div>
+        <div id="logohome"><a href="index.html"><img src="img/logoBigBym.jpg" class="img-circle"></a></div>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              <a class="navbar-brand" href="#"></a>
+              </button>
+            </div>
+
+            <!-- div contenente i lendmark -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="categoryList.html">Categorie</a></li>
+                    <li><a href="corsi.html">Corsi</a></li>
+                    <li><a href="istruttori.html">Istruttori</a></li>
+                    <li><a href="notImplemented.html">Testimonial</a></li>
+                    <li><a href="notImplemented.html">Attrezzature</a></li>
+                    <li><a href="notImplemented.html">Orario</a></li>
+                    <li><a href="notImplemented.html">Iscrizioni e costi</a></li>
+                    <li><a href="location.html">Dove siamo</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+    
     <div class="content">
-    qua ci vanno i contenuti
-    
-    
-    
+        <div id="overview">
+            <h1>BENVENUTO NEL NOSTRO CENTRO</h1><br>
+            <h5>La Big Bym &egrave; una struttura per il tuo benessere e modellata sulle tue esigenze.<br>
+            La qualit&agrave; degli istruttori, la tecnologia degli attrezzi ed i servizi offerti sono il punto di riferimento per chi vuole star bene e raggiungere i propri risultati</h5><br>
+        </div>
+        
+        <table>
+            <tr>
+                <td><div class="homecontent" id="1"><h3><b>La Nostra Storia</b></h3><br>
+                    <h5>Dal 1963 nel cuore di Monza, 3500 metri quadrati dedicati allo sport e al benessere</h5><br>
+                    <iframe width="80%" height="80%">viedo del fondatore</iframe>
+<!--
+                    <iframe width="420" height="315"
+                            src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+                    </iframe>
+-->
+                    </div>
+                </td>
+                
+                <td><div class="homecontent" id="2"><h3><b>I Nostri Spazi</b></h3><br>
+                    <h5>Una fotogallery delle nostre aree</h5><br>
+                    
+                    <div id="gallery"></div>
+                    </div>
+                </td>
+                
+                <td><div class="homecontent" id="3"><h3><b>Cerchi di pi&ugrave;?</b></h3> 
+                    <h5>Non hai trovato le informazioni che cerchi?<br>Mandaci una mail!</h5><br>
+                    <table class="infoform">
+                        <tr><td colspan="2" text-align="center">Richiesta informazioni:</td></tr>
+                        <tr>
+                            <td>Nome e Cognome</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Note</td>
+                            <td><textarea class="scrollabletextarea" name="note"></textarea></td>
+                        </tr>
+                    </table><br>
+                    <input type="submit" value="Invia">
+                    </div>
+                </td>
+            </tr>
+
+        </table>
     </div>
 </div>
-    
 </body>
 </html>

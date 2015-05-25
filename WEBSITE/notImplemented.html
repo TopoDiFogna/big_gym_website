@@ -1,31 +1,10 @@
 <html>
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/jscript.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="js/jscript.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv5QoEh08JhcYkzaU6PTJA_D2a3NisYT0">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(45.584000,9.275233);
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 17
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Big Bym'
-        });
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <title>Big Gym</title>
 </head>
 <body>
 <div class="wrapper">
@@ -54,21 +33,16 @@
                     <li><a href="notImplemented.html">Attrezzature</a></li>
                     <li><a href="notImplemented.html">Orario</a></li>
                     <li><a href="notImplemented.html">Iscrizioni e costi</a></li>
-                    <li class="active"><a href="location.html">Dove siamo</a></li>
+                    <li><a href="location.html">Dove siamo</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br>
     <div class="content">
-        <div class="info">
-            <div id="address">Dove trovarci:<br>Via Napoleone, 2<br>Monza MB 20900</div>
-            <div id="numbers">Come Contattarci:<br>Telefono:039 2020453<br>Fax:420984092<br>E-Mail: biggym@palestreonline.com</div>
+        <div class="alert alert-danger" role="alert">
+        <span class="sr-only">Error:</span>
+        Pagina non implementata
         </div>
-        <div id="map-canvas"></div>
-    
-    
-    
     </div>
 </div>
 </body>
