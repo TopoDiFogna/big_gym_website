@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container" id="wrapper">
@@ -22,67 +23,66 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Categorie</a></li>
-                <li><a href="#">Corsi</a></li>
-                <li><a href="#">Istruttori</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Attrezzature</a></li>
-                <li><a href="#">Orario</a></li>
-                <li><a href="#">Iscrizioni e Costi</a></li>
-                <li><a href="#">Dove Siamo</a></li>
+                <li><a href="categoryList.html">Categorie</a></li>
+                <li><a href="corsi.html">Corsi</a></li>
+                <li><a href="istruttori.html">Istruttori</a></li>
+                <li><a href="notImplemented.html">Testimonial</a></li>
+                <li><a href="notImplemented.html">Attrezzature</a></li>
+                <li><a href="notImplemented.html">Orario</a></li>
+                <li><a href="notImplemented.html">Iscrizioni e Costi</a></li>
+                <li><a href="location.html">Dove Siamo</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-<!--
-    <div class="content">
-        <div id="overview">
-            <h1>BENVENUTO NEL NOSTRO CENTRO</h1><br>
-            <h5>La Big Bym &egrave; una struttura per il tuo benessere e modellata sulle tue esigenze.<br>
-            La qualit&agrave; degli istruttori, la tecnologia degli attrezzi ed i servizi offerti sono il punto di riferimento per chi vuole star bene e raggiungere i propri risultati</h5><br>
+    
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-md-12" style="text-align:center">
+                <h2>BENVENUTO NEL NOSTRO CENTRO</h2><br>
+                <h5>La Big Bym è una struttura per il tuo benessere e modellata 
+                    sulle tue esigenze.<br>
+                    La qualità degli istruttori, la tecnologia degli attrezzi ed i 
+                    servizi offerti sono il punto di riferimento per chi vuole star 
+                    bene e raggiungere i propri risultati</h5>
+            </div>
         </div>
-        
-        <table>
-            <tr>
-                <td><div class="homecontent" id="1"><h3><b>La Nostra Storia</b></h3><br>
-                    <h5>Dal 1963 nel cuore di Monza, 3500 metri quadrati dedicati allo sport e al benessere</h5><br>
-                    <iframe width="80%" height="80%">viedo del fondatore</iframe>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3><b>La Nostra Storia</b></h3><br>
+                <h5>Dal 1963 nel cuore di Monza, 3500 metri quadrati dedicati allo sport e al benessere</h5><br>
+            </div>
+            <div class="col-sm-4">
+                <h3><b>I Nostri Spazi</b></h3><br>
+                <h5>Una fotogallery delle nostre aree</h5><br>
+            </div>
+            <div class="col-sm-4">
+                <h3><b>Cerchi di più?</b></h3><br>
+                <h5>Non hai trovato le informazioni che cerchi?<br>Mandaci una mail!</h5><br>
+                Richiesta informazioni:<br>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="sr-only " for="email">Email:</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
                     </div>
-                </td>
-                
-                <td><div class="homecontent" id="2"><h3><b>I Nostri Spazi</b></h3><br>
-                    <h5>Una fotogallery delle nostre aree</h5><br>
-                    
-                    <div id="gallery"></div>
+                    <div class="form-group">
+                      <label class="sr-only" for="pwd">Password:</label>
+                      <div class="col-sm-8">          
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                      </div>
                     </div>
-                </td>
-                
-                <td><div class="homecontent" id="3"><h3><b>Cerchi di pi&ugrave;?</b></h3> 
-                    <h5>Non hai trovato le informazioni che cerchi?<br>Mandaci una mail!</h5><br>
-                    <table class="infoform">
-                        <tr><td colspan="2" text-align="center">Richiesta informazioni:</td></tr>
-                        <tr>
-                            <td>Nome e Cognome</td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>E-mail</td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Note</td>
-                            <td><textarea class="scrollabletextarea" name="note"></textarea></td>
-                        </tr>
-                    </table><br>
-                    <input type="submit" value="Invia">
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10 col-xs-offset-3 col-xs-9">
+                        <button type="submit" class="btn btn-default">Invia</button>
+                      </div>
                     </div>
-                </td>
-            </tr>
-
-        </table>
+                </form>
+            </div>
+        </div>
     </div>
--->
+
 </div>
 </body>
 </html>
