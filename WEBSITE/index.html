@@ -3,7 +3,7 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jscript.js"></script>
@@ -15,23 +15,26 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="#">
+                    <img class="visible-lg img-circle" id="logohome" src="img/logoBigBym.jpg">
+                    <img class="hidden-lg img-circle" id="logohomesmall" src="img/logoBigBymSmall.jpg">
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="categoryList.html">Categorie</a></li>
-                <li><a href="corsi.html">Corsi</a></li>
-                <li><a href="istruttori.html">Istruttori</a></li>
-                <li><a href="notImplemented.html">Testimonial</a></li>
-                <li><a href="notImplemented.html">Attrezzature</a></li>
-                <li><a href="notImplemented.html">Orario</a></li>
-                <li><a href="notImplemented.html">Iscrizioni e Costi</a></li>
-                <li><a href="location.html">Dove Siamo</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                <li class="active visible-lg"><a href="#">Home</a></li>
+                <li><a href="categoryList.html" id="navbar-link">Categorie</a></li>
+                <li><a href="corsi.html" id="navbar-link">Corsi</a></li>
+                <li><a href="istruttori.html" id="navbar-link">Istruttori</a></li>
+                <li><a href="notImplemented.html" id="navbar-link">Testimonial</a></li>
+                <li><a href="notImplemented.html" id="navbar-link">Attrezzature</a></li>
+                <li><a href="notImplemented.html" id="navbar-link">Orario</a></li>
+                <li><a href="notImplemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
+                <li><a href="location.html" id="navbar-link">Dove Siamo</a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +45,7 @@
             <div class="col-md-12" style="text-align:center">
                 <h2>BENVENUTO NEL NOSTRO CENTRO</h2><br>
                 <h5>La Big Bym è una struttura per il tuo benessere e modellata 
-                    sulle tue esigenze.<br>
+                    sulle tue esigenze.<br><br>
                     La qualità degli istruttori, la tecnologia degli attrezzi ed i 
                     servizi offerti sono il punto di riferimento per chi vuole star 
                     bene e raggiungere i propri risultati</h5>
@@ -106,26 +109,34 @@
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="sr-only " for="email">Email:</label>
+                        <div class="col-sm-2"></div>
                         <div class="col-sm-8">
                             <input type="email" class="form-control" id="email" placeholder="Enter email">
                         </div>
+                        <div class="col-sm-2"></div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="index-form">
                       <label class="sr-only" for="pwd">Nome e Cognome:</label>
-                      <div class="col-sm-8">          
-                        <input type="text" class="form-control" id="pwd" placeholder="Enter Name and surname">
-                      </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">          
+                            <input type="text" class="form-control" id="pwd" placeholder="Enter Name and surname">
+                        </div>
+                        <div class="col-sm-2"></div>
                     </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="pwd">Note:</label>
-                      <div class="col-sm-8">          
-                        <textarea class="form-control" rows="5" id="comment" style="resize:none"></textarea>
-                      </div>
+                    <div class="form-group" id="index-form">
+                        <label class="sr-only" for="pwd">Note:</label>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">          
+                            <textarea class="form-control" rows="5" id="comment" style="resize:none"></textarea>
+                        </div>
+                        <div class="col-sm-2"></div>
                     </div>
-                    <div class="form-group">        
-                      <div class="col-sm-offset-2 col-sm-10 col-xs-offset-3 col-xs-9">
-                        <button type="submit" class="btn btn-default">Invia</button>
-                      </div>
+                    <div class="form-group" id="index-form">        
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <button type="submit" class="btn btn-default">Invia</button>
+                        </div>
+                        <div class="col-sm-2"></div>
                     </div>
                 </form>
             </div>
