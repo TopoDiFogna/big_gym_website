@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jscript.js"></script>
 </head>
 <body>
 <div class="container" id="wrapper">
@@ -47,10 +48,14 @@
                     bene e raggiungere i propri risultati</h5>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-bottom: 50px; text-align: center;">
             <div class="col-sm-4">
                 <h3><b>La Nostra Storia</b></h3><br>
                 <h5>Dal 1963 nel cuore di Monza, 3500 metri quadrati dedicati allo sport e al benessere</h5><br>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yZ15vCGuvH0" allowfullscreen></iframe>
+                </div>
+                <h5>La testimonianza del nostro fondatore</h5>
             </div>
             <div class="col-sm-4">
                 <h3><b>I Nostri Spazi</b></h3><br>
@@ -97,7 +102,7 @@
             <div class="col-sm-4">
                 <h3><b>Cerchi di più?</b></h3><br>
                 <h5>Non hai trovato le informazioni che cerchi?<br>Mandaci una mail!</h5><br>
-                Richiesta informazioni:<br>
+                Richiesta informazioni:<br><br>
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="sr-only " for="email">Email:</label>
@@ -106,9 +111,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                      <label class="sr-only" for="pwd">Password:</label>
+                      <label class="sr-only" for="pwd">Nome e Cognome:</label>
                       <div class="col-sm-8">          
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter Name and surname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="pwd">Note:</label>
+                      <div class="col-sm-8">          
+                        <textarea class="form-control" rows="5" id="comment" style="resize:none"></textarea>
                       </div>
                     </div>
                     <div class="form-group">        

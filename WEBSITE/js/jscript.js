@@ -5,7 +5,7 @@ $(document).ready(Ready);
 function Ready(){
 //    setInterval(animateGallery, 2000);
      // Attivo Carousel
-    $("#myCarousel").carousel({interval: 500});
+    $("#myCarousel").carousel({interval: 2500});
     
     // abilito gli indicatori di Carousel
     $(".item1").click(function(){
