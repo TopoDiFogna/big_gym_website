@@ -6,6 +6,14 @@
         margin: 0px;
     }*/
 
+    body{
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-attachment: local;
+        background-position: center; 
+        background-size: cover;
+    }
+
     #headerGallery{
         height: 350px;
         background-color: greenyellow;
@@ -21,7 +29,23 @@
     #logohome{
         z-index: 2;
         position: absolute;
-        top: 100px;
+        margin-top: -150px;
+        
+    }
+
+    @media screen and (max-width: 990px){
+        #navbar-link{
+            padding-left:5px;
+            padding-right:5px;
+        }
+    }
+
+    #logohomesmall{
+        z-index: 2;
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -10px;
+        
     }
 
     .carousel-inner > .item > img,
