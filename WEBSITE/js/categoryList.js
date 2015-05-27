@@ -19,14 +19,17 @@ function Ready(){
 //        data: {category:id},
         success: function(response) {
             console.log(JSON.parse(response));
-            var courses=JSON.parse(response);
-            console.log("dopo il parser");
-            var el="";
-            for(var i=0;i<courses.length;i++){
-                console.log("courses["+i+"] "+courses[i].id);
+            var category=JSON.parse(response);
+            for(var i=0;i<category.length;i++){
+//                console.log("courses["+i+"] "+category[i].id);
+//                console.log("courses["+i+"] "+category[i].nome);
+//                console.log("courses["+i+"] "+category[i].descrizione);
                 
-//                el+="<div class='course' id='c"+courses[i].id+"'><h2>"+courses[i].title+"</h2><span>"+courses[i].description+"</span></div>";             
-                $(".content").append("<div style=\"margin-top: 100px\">"+ courses[i].id +"</div>");
+                //creazione della tabella contenente le categorie
+                $("#content").append("<div class=\"row\" style=\"margin-top:50px\">");
+                $("#content").append("<div class=\"col-sm-4\">"+ category[i].nome +"</div>");
+                $("#content").append("<div class=\"col-sm-8\">"+ category[i].descrizione +"<a href=\"courseOffer.html?id="+category[i].id+"\">Vedi corsi</a></div>");
+                $("#content").append("</div>");
             }
             
         },
