@@ -15,12 +15,13 @@ else {
     //query execution
     $result = $mysqli->query($query);
     //if there are data available
-    echo $result->num_rows;
+//    echo $result->num_rows;
     if($result->num_rows >0)
     {
         $myArray = array();//create an array
+        $i=0;
         while($row = $result->fetch_array(MYSQL_ASSOC)) {
-            $myArray[] = $row;
+            $myArray[] = array_map('utf8_encode', $row);
         }
         echo json_encode($myArray);
     }
