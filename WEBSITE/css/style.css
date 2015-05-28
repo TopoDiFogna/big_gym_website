@@ -56,7 +56,8 @@ body{
 }
 
 #wrapper{
-    
+    min-height: 100%;
+    padding-bottom: 1px;
 }
 
 #logo{
@@ -94,29 +95,48 @@ body{
 }
 
 #content{
+    min-height: 100%;
     background-color: rgba(210, 105, 30, 0.44);
     padding-bottom: 1px;
-    min-height: 100%;
+
 }
 
 
 
 /*    Location    */
-#map-canvas{
-    height: 300px;
-    width: 600px;
-    display: inline-block;
-    margin-left: 25px;
+
+#info{
+    margin-bottom: 15px;
 }
 
-@media screen and (min-width: 990px){
+@media screen and (min-width: 992px){
     #address{
-        margin-bottom: 45%;
+        margin-bottom: 40%;
     }
 }
 
-@media screen and (max-width: 990px){
+
+@media screen and (max-width: 991px){
     #address{
-        margin-bottom: 10%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #numbers{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #map-container{
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #map-container{
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
