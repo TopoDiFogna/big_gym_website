@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -28,53 +30,55 @@
     <title>Big Gym</title>
 </head>
 <body>
-<div class="container" id="wrapper">
-    <div id="content">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img class="img-circle" id="logo" src="img/logoBigBymSmall.jpg">
-                    </a>
+    <div class="container" id="wrapper">
+        <div id="content">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-circle hidden-xs" id="logo" src="img/logoBigBymSmall.jpg">
+                            <img class="visible-xs" id="logomobile" src="img/logomobile.png">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                        <li class="visible-lg"><a href="index.html">Home</a></li>
+                        <li><a href="categoryList.html" id="navbar-link">Categorie</a></li>
+                        <li><a href="corsi.html" id="navbar-link">Corsi</a></li>
+                        <li><a href="istruttori.html" id="navbar-link">Istruttori</a></li>
+                        <li><a href="notImplemented.html" id="navbar-link">Testimonial</a></li>
+                        <li><a href="notImplemented.html" id="navbar-link">Attrezzature</a></li>
+                        <li><a href="notImplemented.html" id="navbar-link">Orario</a></li>
+                        <li><a href="notImplemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
+                        <li class="active"><a href="location.html" id="navbar-link">Dove Siamo</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                    <li class="visible-lg"><a href="index.html">Home</a></li>
-                    <li><a href="categoryList.html" id="navbar-link">Categorie</a></li>
-                    <li><a href="corsi.html" id="navbar-link">Corsi</a></li>
-                    <li><a href="istruttori.html" id="navbar-link">Istruttori</a></li>
-                    <li><a href="notImplemented.html" id="navbar-link">Testimonial</a></li>
-                    <li><a href="notImplemented.html" id="navbar-link">Attrezzature</a></li>
-                    <li><a href="notImplemented.html" id="navbar-link">Orario</a></li>
-                    <li><a href="notImplemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
-                    <li class="active"><a href="location.html" id="navbar-link">Dove Siamo</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+
+
             <div class="row">
-            <div class=col-md-12 style="text-align:center">
-                <h2>Dove Siamo</h2>
+                <div class=col-md-12 style="text-align:center">
+                    <h2>Dove Siamo</h2>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-md-4" style="text-align:center">
+                    <div class="row" id="address">
+                        Dove trovarci:<br>Via Gallarana, 55<br>Monza MB 20900
+                    </div>
+                    <div class="row" id="numbers" style="overflow: auto;">
+                        Come Contattarci:<br><abbr title="Telefono">Telefono:</abbr> 0392020453<br><abbr title="Fax">Fax:</abbr> 420984092<br><a href="mailto:#">E-Mail: biggym@palestre.com</a>
+                    </div>
+                </div>
+                <div class="col-md-8" id="map-canvas"></div>
+             </div> 
         </div>
-        <div class="row">
-            <div class="col-md-4" style="text-align:center">
-                <div class="row">
-                    <div id="address">Dove trovarci:<br>Via Gallarana, 55<br>Monza MB 20900</div>
-                </div>
-                <div class="row" style="height= 20%"></div>
-                <div class="row">
-                    <div id="numbers">Come Contattarci:<br>Telefono:039 2020453<br>Fax:420984092<br>E-Mail: biggym@palestreonline.com</div>
-                </div>
-            </div>
-            <div class="col-md-8" id="map-canvas"></div>
-        </div> 
     </div>
-</div>
 </body>
 </html>

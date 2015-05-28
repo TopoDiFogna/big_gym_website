@@ -1,25 +1,4 @@
-body{
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: center; 
-    background-size: cover;
-}
-
-#wrapper{
-    
-}
-
-#headerGallery{
-    height: 350px;
-    background-color: greenyellow;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-    top: 0px;
-
-}
-
+/*        Index Only       */
 #banner{
     width: 100%;
 }
@@ -33,32 +12,51 @@ body{
     }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1199px){
+@media screen and (min-width: 992px) and (max-width: 1199px){
     #logohomesmall{
         z-index: 2;
         position: absolute;
         margin-top: -50px;
-        margin-left: -10px;
+        margin-left: 20px;
 
     }
 }
 
-@media screen and (max-width: 990px){
+@media screen and (min-width: 768px) and (max-width: 991px){
     #logohomesmall{
         z-index: 2;
         position: absolute;
-        margin-top: -25px;
+        margin-top: 5px;
         margin-left: -10px;
 
     }
 }
 
-#logohomeoval{
-    z-index: 2;
-    position: absolute;
-    margin-top: -20px;
-    margin-left: -10px;
+#indexTable{
+    padding: 15px;
+}
 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: auto;
+}
+
+
+/*             For all pages            */
+html{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center; 
+    background-size: cover;
+}
+
+#wrapper{
+    
 }
 
 #logo{
@@ -68,24 +66,31 @@ body{
 
 }
 
-@media screen and (max-width: 990px){
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #logo{
+        z-index: 2;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: -10px;
+
+    }
+}
+
+@media screen and (max-width: 991px){
+    .navbar-brand{
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 991px){
     #navbar-link{
         padding-left:5px;
         padding-right:5px;
     }
 }
 
-
-.carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-    margin: auto;
-}
-
-#map-canvas{
-    height: 300px;
-    width: 600px;
-    display: inline-block;
-    margin-left: 25px;
+.navbar{
+    margin-bottom: 0px;
 }
 
 #content{
@@ -94,22 +99,24 @@ body{
     min-height: 100%;
 }
 
-.navbar{
-    margin-bottom: 0px;
+
+
+/*    Location    */
+#map-canvas{
+    height: 300px;
+    width: 600px;
+    display: inline-block;
+    margin-left: 25px;
 }
 
 @media screen and (min-width: 990px){
     #address{
-        margin-bottom: 40%;
+        margin-bottom: 45%;
     }
 }
 
 @media screen and (max-width: 990px){
     #address{
-        margin-right: 40%;
+        margin-bottom: 10%;
     }
-}
-
-#indexTable{
-    padding: 15px;
 }
