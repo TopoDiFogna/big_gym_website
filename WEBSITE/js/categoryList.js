@@ -18,7 +18,6 @@ function Ready(){
         url: "./php/getCategory.php", //Relative or absolute path to file.php file
 //        data: {category:id},
         success: function(response) {
-            console.log(JSON.parse(response));
             var category=JSON.parse(response);
             for(var i=0;i<category.length;i++){
 //                console.log("courses["+i+"] "+category[i].id);
@@ -27,8 +26,8 @@ function Ready(){
                 
                 //creazione della tabella contenente le categorie
                 $("#content").append("<div class=\"row\" style=\"margin-top:50px\">");
-                $("#content").append("<div class=\"col-sm-4\">"+ category[i].nome +"</div>");
-                $("#content").append("<div class=\"col-sm-8\">"+ category[i].descrizione +"<a href=\"courseOffer.html?id="+category[i].id+"\">Vedi corsi</a></div>");
+                $("#content").append("<div class=\"col-sm-4\">"+ category[i].nomeCat +"</div>");
+                $("#content").append("<div class=\"col-sm-8\">"+ category[i].descrizioneCat +"<a href=\"courseOffer.html?id="+category[i].id+"\">Vedi corsi</a></div>");
                 $("#content").append("</div>");
             }
             

@@ -1,5 +1,6 @@
 $(document).ready(Ready);
 
+
 var QueryString = function () {
       // This function is anonymous, is executed immediately and 
       // the return value is assigned to QueryString!
@@ -23,24 +24,23 @@ var QueryString = function () {
         return query_string;
 } ();
 
-function Ready(){    
-    console.log("quary_string.id="+QueryString.id);
-    
-    $.ajax({
-        method: "POST",
-        crossDomain: true,
-        url:"./php/getCourseOffer.php",
-        data: {'category':QueryString.id},
-        success: function(response){
-            console.log("response="+response);
-            var courses=JSON.parse(response);
-            for(var i=0;i<courses.length;i++){
-                $("#content").append("<div class=\"row\" style=\"margin-top:50px\">");
-                $("#content").append("<div class=\"col-sm-4\"><a href=\"specificCourse.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></div>");
-                $("#content").append("<div class=\"col-sm-4\">"+courses[i].descrizione+"</div>");
-                $("#content").append("</div>");
+function Ready(){
+    //controllo se ci sono dei dati che vengono passati
+    var urlData=window.location.search.substring(1);
+    if(urlData != ""){
+        $.ajax({
+            method: "POST",
+            crossDomain: true,
+            url:"./php/getCourse.php",
+            data: {'key': QueryString.name.replace("%20"," ")},
+            success: function(response){
+                var courseItem=JSON.parse(response);
+                $("#content").append("<h2>"+courseItem[0].nome+"</h2>");
+                $("#content").append("<div>"+courseItem[0].descrizione+"</div>");
+                $("#content").append("<div><b>Categoria:</b>"+courseItem[0].nomeCat+"</div>");
                 
+                //fare controllo se ci sono più istruttori per un corso
             }
-        }
-    });
+        });  
+    }
 }
