@@ -153,9 +153,5 @@ body{
     width: 150px;
     height: auto;
     padding-right: 7px;
-}
-
-#month-instructors{
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
