@@ -180,3 +180,15 @@ a:hover {
 #not-implemented-bar{
     margin-top: 25px;
 }
+
+/**     Corso       **/
+#course-image-container{
+    align-items: center;
+}
+
+#course-image{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 250px;
+    max-width: 250px;
+}
