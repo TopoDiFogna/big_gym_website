@@ -53,6 +53,7 @@ body{
     background-attachment: local;
     background-position: center; 
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #content{
@@ -80,7 +81,7 @@ body{
         z-index: 2;
         position: absolute;
         margin-top: 5px;
-        margin-left: -10px;
+        margin-left: -15px;
 
     }
 }
@@ -145,4 +146,12 @@ body{
         margin-right: 40px;
         min-height: 150px;
     }
+}
+
+/**     Istruttori   **/
+#instructor-image{
+    width: 150px;
+    height: auto;
+    padding-right: 7px;
+    padding-bottom: 7px;
 }
