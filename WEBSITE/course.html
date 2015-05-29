@@ -1,3 +1,18 @@
+<!--
+da sistemare il category lendmark perchè il row adesso ha il margin-top a 50px
+ma non riesco a modificare bene(ora carico tutti i dati in un <div id="categorydata">
+dentro il div content
+
+da sistemare i corsi! Lasciare lo spazio per 2 immagini di istruttore (togliendo il center-block si riescono 
+a mettere 2 immagini vicine ma quando si restringe vanno a capo)
+nel caso di un solo istruttore faccio mettere io un solo img
+
+mettere univoco l'id del secondo img altrimenti non riesco a prenderlo da $
+stessa cosa per la seconda foto dell'istruttore
+
+mi mancano nel db il campo per il target! Devo implementarli tutti XO
+-->
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -9,7 +24,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jscript.js"></script>
+    <script src="js/course.js"></script>
 </head>
 <body>
     <div class="container" id="wrapper">
@@ -44,7 +59,7 @@
             </nav>
             <div class="row" id="course-divs">
                 <div class="col-md-12" id="title">
-                    <strong><h2>Hydrobike<br><small>Acquafitness</small></h2></strong>
+<!--                    <strong><h2>Hydrobike<br><small>Acquafitness</small></h2></strong>-->
                 </div>
             </div>
             <div class="row" id="course-divs">

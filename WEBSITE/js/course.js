@@ -1,6 +1,5 @@
 $(document).ready(Ready);
 
-
 var QueryString = function () {
       // This function is anonymous, is executed immediately and 
       // the return value is assigned to QueryString!
@@ -25,84 +24,40 @@ var QueryString = function () {
 } ();
 
 function Ready(){
-    
-    $("#alfabetico").on("click",alfabeticOrder);
-    $("#livello").on("click",levelOrder);
-    console.log(""+window.location.search.substring(1));
-    
-    //controllo se ci sono dei dati che vengono passati
-    var urlData=window.location.search.substring(1);
-
-    alfabeticOrder();
-
-}
-
-function alfabeticOrder(){
+    //prendo i dati del corso
     $.ajax({
         method: "POST",
         crossDomain: true,
         url:"./php/getCourse.php",
-        data: {'key':"alfa"},
+        data: {'key': QueryString.name.replace("%20"," ")},
         success: function(response){
+            console.log("response="+response);
+            var courses=JSON.parse(response);
+            $("#title").html("<strong><h2>"+courses[0].nome+"<br><small>"+courses[0].nomeCat+"</small></h2></strong>");
+            //cambio l'attributo src del tag img
+            $("#course-image").attr("src", courses[0].img1);
+//----------------------------------------TODO DA SISTEMARE CON L'ID DA SISTEMATO------------------------------------------------------------
+            //$("#course-image").attr("src", courses[0].img2);
+            $("#course-desc").html("<strong>Descrizione:</strong><br>"+courses[0].descrizione);
+//-------------------------MANCA IL TARGET NEL DB-------------------------------
             
-            var courseItem=JSON.parse(response);
-            var el="";
-            for(var i=0; i<courseItem.length; i++){
-                el+="<div class=\"row\">";
-                el+="<div class=\"col-sm-4\" id=\"nameCol\"><a href=\"course.html?name="+courseItem[i].nome+"\">"+courseItem[i].nome+"</a></div>";
-                el+="<div class=\"col-sm-6\" id=\"descCol\">"+courseItem[i].descrizione+"</div>";
-                el+="<div class=\"col-sm-2\" id=\"livCol\">"+parseLevel(courseItem[i].livello)+"</div>";
-                el+="</div>";
-            }
-            $("#courseContent").html(el);
-            
-        },
-        error: function(request,error) 
-        {
-            console.log("Error");
         }
     });
-}
-
-function levelOrder(){
-    $.ajax({
-        method: "POST",
-        crossDomain: true,
-        url:"./php/getCourse.php",
-        data: {'key':"liv"},
-        success: function(response){
-            
-            var courseItem=JSON.parse(response);
-            var el="";
-            for(var i=0; i<courseItem.length; i++){
-                el+="<div class=\"row\">";
-                el+="<div class=\"col-sm-4\" id=\"nameCol\"><a href=\"specificCourse.html?name="+courseItem[i].nome+"\">"+courseItem[i].nome+"</a></div>";
-                el+="<div class=\"col-sm-6\" id=\"descCol\">"+courseItem[i].descrizione+"</div>";
-                el+="<div class=\"col-sm-2\" id=\"livCol\">"+parseLevel(courseItem[i].livello)+"</div>";
-                el+="</div>";
-            }
-            $("#courseContent").html(el);
-            
-        },
-        error: function(request,error) 
-        {
-            console.log("Error");
-        }
-    });
-}
-
-function parseLevel(liv){
-    var lev="";
-    switch(liv){
-        case "0":
-            lev="Base";
-            break;
-        case "1":
-            lev="Intermedio";
-            break;
-        case "2":
-            lev="Avanzato";
-            break;
-    }
-    return lev;
+    
+    //prendo i dati dei relativi istruttori
+//    $.ajax({
+//        method: "POST",
+//        crossDomain: true,
+//        url:"./php/getInstructor.php",
+//        data: {'key': QueryString.name},
+//        success: function(response){
+//            console.log("response="+response);
+//            var courses=JSON.parse(response);
+//            $("#course-title").append("<div class=\"row\" style=\"margin-top:50px\">");
+//            $("#content").append("<div class=\"col-sm-4\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></div>");
+//            $("#content").append("<div class=\"col-sm-4\">"+courses[i].descrizione+"</div>");
+//            $("#content").append("</div>");
+//        }
+//    });
+    //se ci sono 2 istruttori
 }
