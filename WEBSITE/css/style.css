@@ -181,7 +181,7 @@ a:hover {
     margin-top: 25px;
 }
 
-/**     Corso       **/
+/**     Course       **/
 #course-image-container{
     align-items: center;
 }
@@ -191,4 +191,20 @@ a:hover {
     margin-right: auto;
     max-height: 250px;
     max-width: 250px;
+}
+
+
+/**     Instructor       **/
+
+#instructor-first-row{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+#instructor-second-row{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
 }

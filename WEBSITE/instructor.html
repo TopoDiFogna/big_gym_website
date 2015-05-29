@@ -44,22 +44,70 @@
                     </div>
                 </nav>
             <div class="row" id="title">
-                <div class=col-md-12 style="text-align:center" id="instructor-name">
+                <div class="col-md-12" style="text-align:center" id="instructor-name">
                     <h2>Stefano Campari</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class=col-md-4 id="instructor-image">
-                    <img src="img/stefano_campari.jpg" style="float:left">
-                </div>
-                <div class=col-md-3 style="text-align:left" id="instructor-info">
-                    Qualche informazione in più su <span id="instructor-name">Stefano Campari</span>
-                </div>
-                <div class=col-md-5 style="text-align:center" id="instructor-hystory">
-
-                </div>
             
+            <div class="row" id="instructor-first-row">
+                <div class="col-md-3" id="instructor-img">
+                    <img src="img/stefano_campari.jpg">
+                </div>
+                <div class="col-md-6" id="instructor-info">
+                    <div class="row">
+                        <b>Qualche informazione in più su <span id="instructor-name">Stefano Campari</span>: </b><br>
+                        Età: <span id="instructor-age">33</span> anni <br>
+                        Altezza: <span id="instructor-high">1,85</span> m <br>
+                        Luogo di nascita: <span id="instructor-place-birth">Milano</span><br><br>
+                    </div>
+                    <div class="row">
+                        <b>Curriculum:</b> <br>
+                        <ul id="instructor-curriculum">
+                            <li>AA 2006-2007 Laurea in Scienze Motorie e Sportive conseguita presso l’Università degli Studi di Milano</li>
+                            <li>2008 Corso di Istruttore Pilates conseguito presso Sporting Club Villasanta</li>
+                            <li> 2011 Corso di Istruttore Pancafit conseguito presso Wellness Center 2000 Roma</li>
+                            <li>2014 Corso di Istruttore Sweeng conseguito presso Big Gym Monza</li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col-md-3" style="text-align:left" id="twitter">
+                    <a class="twitter-timeline" 
+                       href="https://twitter.com/GymStimulus" 
+                       data-widget-id="604343362192293888">Tweet di @GymStimulus
+                    </a>
+                    <script>
+                        !function(d,s,id){
+                                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                                if(!d.getElementById(id)){
+                                    js=d.createElement(s);
+                                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js,fjs);
+                                }
+                            }
+                        (document,"script","twitter-wjs");
+                    </script>
+                  
+                </div>
             </div>
+            
+            <div class="row" id="instructor-second-row">
+                <div class="col-md-4" style="text-align:left" id="month-award">           
+                    <span style="color:gold" class="glyphicon glyphicon-certificate"></span>
+                    <b>Best Customer Trainer del mese </b>            
+                </div> 
+                <div class="col-md-2" style="text-align:center">
+                    Istruttore di:<br>
+                    <a href="course.html" id="course1">Pancafit</a><br>
+                    <a href="course.html" id="course2">Sweeng</a><br>
+                </div>
+                <div class="col-md-2" style="text-align:center">   
+                    Esperto in:<br>
+                    <a href="course_category.html" id="expert">Funzionali</a><br>                    
+                </div>
+                <div class="col-md-4" > 
+                </div> 
+                                   
+            </div>         
     </div>
 </body>
 </html>
