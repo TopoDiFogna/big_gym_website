@@ -102,6 +102,7 @@ body{
 
 #title{
     margin-bottom: 10px;
+    text-align: center;
 }
 
 a:link {
@@ -191,10 +192,6 @@ a:hover {
     max-height: 200px;
 }
 
-#course-title{
-    text-align: center;
-}
-
 #course-sched{
     text-align: center;
     height: 100%;
@@ -233,4 +230,59 @@ a:hover {
 #course-instr{
     text-align: center;
     padding-top: 20px;
+}
+
+/*    Course Category    */
+@media screen and (min-width: 992px){
+    #categories{
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    #course-category-image-left{
+        float: left;
+        max-height: 200px;
+    }
+
+    #right-category{
+        text-align: right;
+    }
+
+    #left-category{
+        text-align: left;
+    }
+
+    #course-category-image-right{
+        float: right;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #categories{
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    #course-category-image-left{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 200px;
+    }
+
+    #right-category{
+        text-align: center;
+    }
+
+    #left-category{
+        text-align: center;
+    }
+
+    #course-category-image-right{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 200px;
+    }
 }
