@@ -42,33 +42,87 @@
                     </div>
                 </div>
             </nav>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Titolo</h2>
+            <div class="row" id="course-divs">
+                <div class="col-md-12" id="course-title">
+                    <strong><h2>Hydrobike<br><small>Acquafitness</small></h2></strong>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-xs-12">
+            <div class="row" id="course-divs">
+                <div class="col-md-3 col-xs-12" id="course-sched">
                     Orario
                 </div>
                 <div class="col-md-9 col-xs-12">
                     <div class="col-md-6 col-xs-12">
-                        <img class="ceter-block" id="course-image" src="img/hydrobike.jpg">
+                        <img class="img-responsive center-block" id="course-image" src="img/hydrobike.jpg">
                     </div>
                     <div class="col-md-6 col-xs-12">
-                        <img id="course-image" src="img/hydrobike2.jpg">
+                        <img class="img-responsive center-block hidden-xs hidden-sm" id="course-image" src="img/hydrobike2.jpg">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
+            <div class="row" id="course-divs">
+                <div class="col-md-3  hidden-xs hidden-sm" id="course-reg">
+                    <p>Registrati al Corso:</p>
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" form="mail">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                            <div class="form-group">
+                            <label class="sr-only" form="name">Nome:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nome">
+                        </div>
+                            <div class="form-group">
+                            <label class="sr-only" form="surname">Cognome:</label>
+                            <input type="text" class="form-control" id="surname" placeholder="Cognome">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" form="birthday">Data di Nascita:</label>
+                            <input type="date" class="form-control" id="birthdate">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-md-8 col-xs-12">
                     <div class="row">
+                        <div class="col-md-12" id="course-desc">
+                            <strong>Descrizione:</strong><br>
+                            L'idrobike consiste nella pratica dello spinning in piscina: la bicicletta che si utilizza è una speciale bicicletta da spinning in acciaio, concepita per sfruttare e beneficiare al massimo della resistenza dell' acqua. Non è necessario saper nuotare per frequentare un corso di hydrobike: l' acqua infatti raggiunge l'altezza della vita, spalle e testa rimagono fuori, solo le ginocchia restano sempre sommerse durante gli esercizi.
+                        </div> 
+                        <div class="col-md-12" id="course-desc">
+                            <strong>Target:</strong><br>
+                            La pratica dell'hydrobike è l'ideale per chi presenta problemi di sovrappeso e di ritenzione idrica: è un' attività fisica di tipo aerobico quindi permette un buon consumo di calorie. Inoltre, un buon allenamento agisce positivamente sul sistema cardio-vascolare rinforzando il cuore, la resistenza alla fatica e migliorando la circolazione.
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="course-instr">
+                        <div class="col-md-4 col-xs-12">
+                            <strong>Istruttore del Corso:</strong>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <img class="img-responsive  center-block" id="course-instr-image" src="img/alessio_andolina.jpg">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-3  visible-xs visible-sm" id="course-reg">
+                <p>Registrati al Corso:</p>
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only" form="mail">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                        <div class="form-group">
+                        <label class="sr-only" form="name">Nome:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nome">
+                    </div>
+                        <div class="form-group">
+                        <label class="sr-only" form="surname">Cognome:</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Cognome">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" form="birthday">Data di Nascita:</label>
+                        <input type="date" class="form-control" id="birthdate">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

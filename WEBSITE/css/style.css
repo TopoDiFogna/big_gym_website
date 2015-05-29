@@ -8,7 +8,6 @@
         z-index: 2;
         position: absolute;
         margin-top: -150px;
-
     }
 }
 
@@ -18,7 +17,6 @@
         position: absolute;
         margin-top: -50px;
         margin-left: 20px;
-
     }
 }
 
@@ -28,7 +26,6 @@
         position: absolute;
         margin-top: 5px;
         margin-left: -10px;
-
     }
 }
 
@@ -43,7 +40,6 @@
 #carousel-link{
     color: #ffffff;
 }
-
 
 /*             For all pages            */
 html{
@@ -64,9 +60,8 @@ body{
     min-height: 100%;
     background-color: rgba(210, 105, 30, 0.44);
     padding-bottom: 1px;
-
+    
 }
-
 
 #wrapper{
     min-height: 100%;
@@ -77,7 +72,6 @@ body{
     z-index: 2;
     position: absolute;
     margin-top: -20px;
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -86,7 +80,6 @@ body{
         position: absolute;
         margin-top: 5px;
         margin-left: -15px;
-
     }
 }
 
@@ -123,9 +116,7 @@ a:hover {
     color: #8822ff;
 }
 
-
 /*    Location    */
-
 #info{
     margin-bottom: 15px;
 }
@@ -181,21 +172,7 @@ a:hover {
     margin-top: 25px;
 }
 
-/**     Course       **/
-#course-image-container{
-    align-items: center;
-}
-
-#course-image{
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 250px;
-    max-width: 250px;
-}
-
-
 /**     Instructor       **/
-
 #instructor-first-row{
     padding-top: 20px;
     padding-left: 15px;
@@ -207,4 +184,53 @@ a:hover {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
+}
+
+/**     Corso       **/
+#course-image{
+    max-height: 200px;
+}
+
+#course-title{
+    text-align: center;
+}
+
+#course-sched{
+    text-align: center;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#course-reg{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#course-divs{
+    padding-bottom: 10px;
+}
+
+#course-desc{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 991px){
+    #course-desc{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+#course-instr-image{
+    max-height: 200px;
+}
+
+#course-instr{
+    text-align: center;
+    padding-top: 20px;
 }
