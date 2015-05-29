@@ -40,6 +40,10 @@
     margin: auto;
 }
 
+#carousel-link{
+    color: #ffffff;
+}
+
 
 /*             For all pages            */
 html{
@@ -107,6 +111,18 @@ body{
     margin-bottom: 10px;
 }
 
+a:link {
+    color: #9300ff;
+}
+
+a:visited {
+    color: #42008e;
+}
+
+a:hover {
+    color: #8822ff;
+}
+
 
 /*    Location    */
 
@@ -152,6 +168,15 @@ body{
 #instructor-image{
     width: 150px;
     height: auto;
-    padding-right: 7px;
+    padding-right: 5px;
     padding-bottom: 7px;
+}
+
+#instructor-award-info{
+    margin-right: 7px;
+}
+
+/**     Not Implemented   **/
+#not-implemented-bar{
+    margin-top: 25px;
 }

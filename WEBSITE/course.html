@@ -1,39 +1,16 @@
-<!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jscript.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv5QoEh08JhcYkzaU6PTJA_D2a3NisYT0"></script>
-    <script type="text/javascript">
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(45.587681, 9.296799);
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 15
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Big Bym'
-        });
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <title>Big Gym</title>
+    <script src="js/specificCourse.js"></script>
 </head>
 <body>
-    <div class="container" id="wrapper">
-        <div id="content">
-            <nav class="navbar navbar-inverse">
+<div class="container" id="wrapper">
+    <nav class="navbar navbar-inverse">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -56,32 +33,15 @@
                             <li><a href="not_implemented.html" id="navbar-link">Attrezzature</a></li>
                             <li><a href="not_implemented.html" id="navbar-link">Orario</a></li>
                             <li><a href="not_implemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
-                            <li class="active"><a href="location.html" id="navbar-link">Dove Siamo</a></li>
+                            <li><a href="location.html" id="navbar-link">Dove Siamo</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-
-
-            <div class="row" id="title">
-                <div class=col-md-12 style="text-align:center">
-                    <h2>Dove Siamo</h2>
-                </div>
-            </div>
-            <div class="row" id="info">
-                <div class="col-md-4" style="text-align:center">
-                    <div class="row" id="address">
-                        Dove trovarci:<br>Via Gallarana, 55<br>Monza MB 20900
-                    </div>
-                    <div class="row" id="numbers" style="overflow: auto;">
-                        Come Contattarci:<br><abbr title="Telefono">Telefono:</abbr> 0392020453<br><abbr title="Fax">Fax:</abbr> 420984092<br>E-Mail: <a href="mailto:#">biggym@palestre.com</a>
-                    </div>
-                </div>
-                <div class="col-md-8 embed-responsive" id="map-container">
-                    <div class="embed-responsive-item" id="map-canvas"></div>
-                </div>
-             </div> 
-        </div>
+    <div class="container" id="content">
+        
+        
     </div>
+</div>
 </body>
 </html>

@@ -36,7 +36,7 @@ function Ready(){
             var courses=JSON.parse(response);
             for(var i=0;i<courses.length;i++){
                 $("#content").append("<div class=\"row\" style=\"margin-top:50px\">");
-                $("#content").append("<div class=\"col-sm-4\"><a href=\"specificCourse.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></div>");
+                $("#content").append("<div class=\"col-sm-4\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></div>");
                 $("#content").append("<div class=\"col-sm-4\">"+courses[i].descrizione+"</div>");
                 $("#content").append("</div>");
                 
