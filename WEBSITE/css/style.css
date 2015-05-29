@@ -166,6 +166,7 @@ a:hover {
 
 #instructor-award-info{
     margin-right: 7px;
+    padding-bottom: 15px;
 }
 
 /**     Not Implemented   **/
@@ -285,4 +286,26 @@ a:hover {
         margin-right: auto;
         max-height: 200px;
     }
+}
+
+/*    All Courses    */
+#order{
+    padding-bottom: 10px;
+}
+
+#courseContent{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nameCol, #livCol{
+    text-align: center;
+}
+
+#nameCol, #descCol, #livCol{
+    padding-bottom: 5px;
+}
+
+#livCol{
+    font-weight: bold;
 }
