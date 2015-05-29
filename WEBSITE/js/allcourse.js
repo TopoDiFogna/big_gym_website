@@ -48,7 +48,7 @@ function alfabeticOrder(){
             var courseItem=JSON.parse(response);
             var el="";
             for(var i=0; i<courseItem.length; i++){
-                el+="<div class=\"row\">";
+                el+="<div class=\"row\" id=\"course-row\">";
                 el+="<div class=\"col-sm-4\" id=\"nameCol\"><a href=\"course.html?name="+courseItem[i].nome+"\">"+courseItem[i].nome+"</a></div>";
                 el+="<div class=\"col-sm-6\" id=\"descCol\">"+courseItem[i].descrizione+"</div>";
                 el+="<div class=\"col-sm-2\" id=\"livCol\">"+parseLevel(courseItem[i].livello)+"</div>";
@@ -75,7 +75,7 @@ function levelOrder(){
             var courseItem=JSON.parse(response);
             var el="";
             for(var i=0; i<courseItem.length; i++){
-                el+="<div class=\"row\">";
+                el+="<div class=\"row\" id=\"course-row\">";
                 el+="<div class=\"col-sm-4\" id=\"nameCol\"><a href=\"course.html?name="+courseItem[i].nome+"\">"+courseItem[i].nome+"</a></div>";
                 el+="<div class=\"col-sm-6\" id=\"descCol\">"+courseItem[i].descrizione+"</div>";
                 el+="<div class=\"col-sm-2\" id=\"livCol\">"+parseLevel(courseItem[i].livello)+"</div>";
