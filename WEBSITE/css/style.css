@@ -135,12 +135,14 @@ body{
 @media screen and (min-width: 992px){
     #map-container{
         margin-left: -40px;
+        min-height: 300px;
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
     #map-container{
         margin-left: 40px;
         margin-right: 40px;
+        min-height: 150px;
     }
 }
