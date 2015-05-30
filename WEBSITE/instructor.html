@@ -50,8 +50,8 @@
         </div>
 
         <div class="row item-" id="instructor-first-row">
-            <div class="col-md-3 hidden-xs" id="instructor-img">
-                <img class="img-responsive" src="img/stefano_campari.jpg">
+            <div class="col-md-3">
+                <img class="img-responsive center-block" src="img/stefano_campari.jpg" id="instructor-img">
             </div>
             <div class="col-md-6">
                 <div class="row" id="instructor-info">
@@ -70,7 +70,7 @@
                     </ul>
                 </div>
             </div>                
-            <div class="col-md-3" style="text-align:left" id="twitter">
+            <div class="col-md-3 hidden-sm hidden-xs" id="twitter">
                 <a class="twitter-timeline" 
                    href="https://twitter.com/GymStimulus" 
                    data-widget-id="604343362192293888">Tweet di @GymStimulus
@@ -87,27 +87,54 @@
                     (document,"script","twitter-wjs");
                 </script>
             </div>
+            <div class="row">
+                <div class="col-sm-4 col-sx-4 hidden-md hidden-lg" style="text-align:center" id="month-award">           
+                    <span style="color:gold" class="glyphicon glyphicon-certificate"></span>
+                    <b>Best Customer Trainer</b>            
+                </div> 
+                <div class="col-sm-4 col-sx-4 hidden-md hidden-lg" style="text-align:center">
+                    Istruttore di:<br>
+                    <a href="course.html" id="course1">Pancafit</a><br>
+                    <a href="course.html" id="course2">Sweeng</a><br>
+                </div>
+                <div class="col-sm-4 col-sx-4 hidden-md hidden-lg" style="text-align:center">   
+                    Esperto in:<br>
+                    <a href="course_category.html" id="expert">Funzionali</a><br>                    
+                </div>
+            </div>
         </div>
         <div class="row" id="instructor-second-row">
             <div class="col-md-4 hidden-sm hidden-xs" style="text-align:left" id="month-award">           
                 <span style="color:gold" class="glyphicon glyphicon-certificate"></span>
-                <b>Best Customer Trainer del mese </b>            
-            </div> 
-            <div class="col-sm-4 col-sx-4 hidden-md hidden-lg" style="text-align:center" id="month-award">           
-                <span style="color:gold" class="glyphicon glyphicon-certificate"></span>
-                <b>Best Customer Trainer del mese </b>            
-            </div> 
-            <div class="col-md-2" style="text-align:center">
+                <b>Best Customer Trainer</b>            
+            </div>             
+            <div class="col-md-2 hidden-sm hidden-xs" style="text-align:center">
                 Istruttore di:<br>
                 <a href="course.html" id="course1">Pancafit</a><br>
                 <a href="course.html" id="course2">Sweeng</a><br>
             </div>
-            <div class="col-md-2" style="text-align:center">   
+            <div class="col-md-2 hidden-sm hidden-xs" style="text-align:center">   
                 Esperto in:<br>
                 <a href="course_category.html" id="expert">Funzionali</a><br>                    
             </div>
-            <div class="col-md-4" > 
-            </div>                         
+            
+             <div class="col-sm-12 col-xs-12 hidden-md hidden-lg" id="twitter" style="text-align:center">
+                <a class="twitter-timeline" 
+                   href="https://twitter.com/GymStimulus" 
+                   data-widget-id="604343362192293888">Tweet di @GymStimulus
+                </a>
+                <script>
+                    !function(d,s,id){
+                            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                            if(!d.getElementById(id)){
+                                js=d.createElement(s);
+                                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js,fjs);
+                            }
+                        }
+                    (document,"script","twitter-wjs");
+                </script>
+            </div>
         </div>         
     </div>
 </body>
