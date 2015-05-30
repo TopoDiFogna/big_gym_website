@@ -52,6 +52,7 @@ function Ready(){
                     console.log("response="+response);
                     var instructor=JSON.parse(response);
                     $("#course-instr-image").attr("src", instructor[0].img);
+                    $("#link-im1").attr("href", "instructor.html?id=\""+instructor[0].id_istruttore+"\"");
                     //se ci sono 2 istruttori
                     if(courses[0].istruttore2 != 0){
                         instructor2(courses);
@@ -73,6 +74,7 @@ function instructor2(data){
             console.log("response="+response);
             var instructor=JSON.parse(response);
             $("#course-instr-image2").attr("src", instructor[0].img);
+            $("#link-im2").attr("href", "instructor.html?id=\""+instructor[0].id_istruttore+"\"");
         }
     });
 }

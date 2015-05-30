@@ -162,6 +162,7 @@ a:hover {
     height: auto;
     padding-right: 5px;
     padding-bottom: 7px;
+    float: left;
 }
 
 #instructor-award-info{
