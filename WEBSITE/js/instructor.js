@@ -36,6 +36,7 @@ function Ready(){
             var el="";
             $("#title").append(" - "+instructors[0].nomeIstruttore);
             //inserisco le informazioni dell'istruttore
+            $("#instructor-name2").html(instructors[0].nomeIstruttore);
             $("#instructor-name").html("<h2>"+instructors[0].nomeIstruttore+"</h2>");
             $("#instructor-img").attr("src", instructors[0].img);
             $("#instructor-age").html(instructors[0].eta);
