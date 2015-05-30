@@ -25,10 +25,13 @@ function Ready(){
 //                console.log("courses["+i+"] "+category[i].descrizione);
                 
                 //creazione della tabella contenente le categorie
-                $("#categorydata").append("<div class=\"row\" id=\"category-row\">");
-                $("#categorydata").append("<div class=\"col-sm-4\">"+ category[i].nomeCat +"</div>");
-                $("#categorydata").append("<div class=\"col-sm-8\">"+ category[i].descrizioneCat +"<a href=\"course_category.html?id="+category[i].id+"\">Vedi corsi</a></div>");
-                $("#categorydata").append("</div>");
+                var el="";
+                el+="<div class=\"row\" id=\"category-row\">";
+                el+="<div class=\"col-sm-4\">"+ category[i].nomeCat +"</div>";
+                el+="<div class=\"col-sm-8\">"+ category[i].descrizioneCat +"<a href=\"course_category.html?id="+category[i].id+"\">Vedi corsi</a></div>";
+                el+="</div>";
+                $("#categorydata").append(el);
+
             }
             
         },
