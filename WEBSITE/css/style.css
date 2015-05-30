@@ -100,7 +100,7 @@ body{
     margin-bottom: 0px;
 }
 
-#mytitle{
+#page-title{
     margin-bottom: 10px;
     text-align: center;
 }
@@ -232,6 +232,7 @@ a:hover {
 
 
 #course-instr-image{
+    padding-bottom: 10px;
     max-height: 200px;
 }
 
