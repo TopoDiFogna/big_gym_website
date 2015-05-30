@@ -32,7 +32,6 @@ function Ready(){
         success: function(response){
             console.log("response="+response);
             var courses=JSON.parse(response);
-            //NON MOSTA UN CAZZO
             $("#page-title").html("<h2>Tutti i corsi di: <strong>"+courses[0].nomeCat+"</strong></h2>");
             for(var i=0;i<courses.length;i++){
                 

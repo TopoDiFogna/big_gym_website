@@ -13,6 +13,8 @@ function Ready(){
             var nPremi=0;
             for(var i=0;i<instructors.length;i++){
                 $(".instructor").append("<a href=\"instructor.html?id="+instructors[i].id_istruttore+"\">"+instructors[i].nomeIstruttore+"</a><br>");
+            }
+            for(var i=0;i<instructors.length;i++){
                 if(instructors[i].id_premi != ""){
                     if(nPremi<2){
                         $("#instructor-award-info").append("<div class=\"col-md-6 col-sm-12 col-xs-12\">"+   
@@ -30,6 +32,7 @@ function Ready(){
                     
                 }
             }
+            
             
         },
         error: function(request,error) 
