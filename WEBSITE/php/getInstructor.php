@@ -1,5 +1,5 @@
 <?php
-$instructoId=$_POST['instructor'];
+$instructorId=$_POST['instructor'];
 
 $mysqli = new mysqli("localhost", "root", "", "big_gym");
 
@@ -8,9 +8,15 @@ if(mysqli_connect_errno()){
     exit();
 }
 else{
-    //echo $categoryId; //mi fa restituire il valore del post
-    $myquery = " SELECT * FROM instructor where id=".$instructoId;
-//    echo $myquery; //restituisce la query
+    $myquery="";
+    switch($instructorId){
+        case 0:
+            $myquery="SELECT * FROM `instructor`left JOIN award on id_premi=idPremi order by nomeIstruttore";
+            break;
+        default:
+            $myquery = " SELECT * FROM instructor left JOIN award on id_premi=idPremi WHERE id_istruttore=".$instructorId;
+            break;
+    }
     $result = $mysqli->query($myquery);
     if($result->num_rows >0)
     {

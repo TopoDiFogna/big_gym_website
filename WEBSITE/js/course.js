@@ -24,6 +24,7 @@ var QueryString = function () {
 } ();
 
 function Ready(){
+    var courses= {};
     //prendo i dati del corso
     $.ajax({
         method: "POST",
@@ -32,7 +33,7 @@ function Ready(){
         data: {'key': QueryString.name.replace("%20"," ")},
         success: function(response){
             console.log("response="+response);
-            var courses=JSON.parse(response);
+            courses=JSON.parse(response);
             $("#page-title").html("<strong><h2>"+courses[0].nome+"<br><small><a href=\"course_category.html?id="+courses[0].categoria+"\">"+courses[0].nomeCat+"</a></small></h2></strong>");
             //cambio l'attributo src del tag img
             $("#course-image").attr("src", courses[0].img1);
@@ -41,20 +42,39 @@ function Ready(){
             $("#course-desc").html("<strong>Descrizione:</strong><br>"+courses[0].descrizione);
             //target
             $("#course-target").html(" <strong>Target:</strong><br>"+courses[0].target);
+            //prendo i dati dei relativi istruttori
+            $.ajax({
+                method: "POST",
+                crossDomain: true,
+                url:"./php/getInstructor.php",
+                data: {'instructor': courses[0].istruttore},
+                success: function(response){
+                    console.log("response="+response);
+                    var instructor=JSON.parse(response);
+                    $("#course-instr-image").attr("src", instructor[0].img);
+                    $("#link-im1").attr("href", "instructor.html?id=\""+instructor[0].id_istruttore+"\"");
+                    //se ci sono 2 istruttori
+                    if(courses[0].istruttore2 != 0){
+                        instructor2(courses);
+                    }
+                }
+            });            
         }
     });
     
-    //prendo i dati dei relativi istruttori
+}
+
+function instructor2(data){
     $.ajax({
         method: "POST",
         crossDomain: true,
         url:"./php/getInstructor.php",
-        data: {'instructor': QueryString.name},
+        data: {'instructor': data[0].istruttore2},
         success: function(response){
             console.log("response="+response);
-            var courses=JSON.parse(response);
-           
+            var instructor=JSON.parse(response);
+            $("#course-instr-image2").attr("src", instructor[0].img);
+            $("#link-im2").attr("href", "instructor.html?id=\""+instructor[0].id_istruttore+"\"");
         }
     });
-    //se ci sono 2 istruttori
 }
