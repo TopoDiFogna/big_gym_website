@@ -218,6 +218,10 @@ a:hover {
     padding-top: 20px;
     text-align: justify;
 }
+#course-target{
+    padding-top: 20px;
+    text-align: justify;
+}
 
 @media screen and (max-width: 991px){
     #course-desc{

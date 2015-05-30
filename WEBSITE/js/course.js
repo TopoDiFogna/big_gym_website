@@ -33,30 +33,28 @@ function Ready(){
         success: function(response){
             console.log("response="+response);
             var courses=JSON.parse(response);
-            $("#mytitle").html("<strong><h2>"+courses[0].nome+"<br><small><a href=\"course_category.html?id="+courses[0].categoria+"\">"+courses[0].nomeCat+"</a></small></h2></strong>");
+            $("#page-title").html("<strong><h2>"+courses[0].nome+"<br><small><a href=\"course_category.html?id="+courses[0].categoria+"\">"+courses[0].nomeCat+"</a></small></h2></strong>");
             //cambio l'attributo src del tag img
             $("#course-image").attr("src", courses[0].img1);
             $("#course-image2").attr("src", courses[0].img2);
+            //descrizione
             $("#course-desc").html("<strong>Descrizione:</strong><br>"+courses[0].descrizione);
-//-------------------------MANCA IL TARGET NEL DB-------------------------------
-            
+            //target
+            $("#course-target").html(" <strong>Target:</strong><br>"+courses[0].target);
         }
     });
     
     //prendo i dati dei relativi istruttori
-//    $.ajax({
-//        method: "POST",
-//        crossDomain: true,
-//        url:"./php/getInstructor.php",
-//        data: {'key': QueryString.name},
-//        success: function(response){
-//            console.log("response="+response);
-//            var courses=JSON.parse(response);
-//            $("#course-title").append("<div class=\"row\" style=\"margin-top:50px\">");
-//            $("#content").append("<div class=\"col-sm-4\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></div>");
-//            $("#content").append("<div class=\"col-sm-4\">"+courses[i].descrizione+"</div>");
-//            $("#content").append("</div>");
-//        }
-//    });
+    $.ajax({
+        method: "POST",
+        crossDomain: true,
+        url:"./php/getInstructor.php",
+        data: {'instructor': QueryString.name},
+        success: function(response){
+            console.log("response="+response);
+            var courses=JSON.parse(response);
+           
+        }
+    });
     //se ci sono 2 istruttori
 }
