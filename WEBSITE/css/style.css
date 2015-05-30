@@ -100,7 +100,7 @@ body{
     margin-bottom: 0px;
 }
 
-#title{
+#mytitle{
     margin-bottom: 10px;
     text-align: center;
 }
@@ -190,6 +190,9 @@ a:hover {
 
 /**     Corso       **/
 #course-image{
+    max-height: 200px;
+}
+#course-image2{
     max-height: 200px;
 }
 

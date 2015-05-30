@@ -24,8 +24,6 @@ var QueryString = function () {
 } ();
 
 function Ready(){    
-    console.log("quary_string.id="+QueryString.id);
-    
     $.ajax({
         method: "POST",
         crossDomain: true,
@@ -34,11 +32,30 @@ function Ready(){
         success: function(response){
             console.log("response="+response);
             var courses=JSON.parse(response);
+            //NON MOSTA UN CAZZO
+            $("#mytitle").html("<h2>Tutti i corsi di: <strong>"+courses[0].nomeCat+"</strong></h2>");
             for(var i=0;i<courses.length;i++){
-                $("#content").append("<div class=\"row\" style=\"margin-top:50px\">");
-                $("#content").append("<div class=\"col-sm-4\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></div>");
-                $("#content").append("<div class=\"col-sm-4\">"+courses[i].descrizione+"</div>");
-                $("#content").append("</div>");
+                
+                if(i%2==0){
+                    $("#content").append("<div class=\"row\" id=\"categories\">"+
+                        "<div class=\"col-xs-12 col-sm-12 col-md-6\">"+
+                            "<h2 id=\"right-category\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</h2>"+
+                        "</div>"+
+                        "<div class=\"col-xs-12 col-sm-12 col-md-6\">"+
+                            "<img class=\"img-responsive\" id=\"course-category-image-left\" src=\""+courses[i].img1+"\">"+
+                        "</div>"+
+                    "</div>");
+                }else{
+                    $("#content").append("<div class=\"row\" id=\"categories\">"+
+                        "<div class=\"col-xs-12 col-sm-12 col-md-6\">"+
+                            "<h2 class=\"hidden-md hidden-lg\" id=\"left-category\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></h2>"+
+                            "<img class=\"img-responsive\" id=\"course-category-image-right\" src=\""+courses[i].img1+"\">"+
+                        "</div>"+
+                        "<div class=\"col-xs-12 col-sm-12 col-md-6\">"+
+                            "<h2 class=\"hidden-xs hidden-sm\" id=\"left-category\"><a href=\"course.html?name="+courses[i].nome+"\">"+courses[i].nome+"</a></h2>"+
+                        "</div>"+
+                    "</div>");
+                }
                 
             }
         }

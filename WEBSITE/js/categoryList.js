@@ -27,7 +27,7 @@ function Ready(){
                 //creazione della tabella contenente le categorie
                 $("#categorydata").append("<div class=\"row\" id=\"category-row\" style=\"margin-top:50px\">");
                 $("#categorydata").append("<div class=\"col-sm-4\">"+ category[i].nomeCat +"</div>");
-                $("#categorydata").append("<div class=\"col-sm-8\">"+ category[i].descrizioneCat +"<a href=\"courses_by_category.html?id="+category[i].id+"\">Vedi corsi</a></div>");
+                $("#categorydata").append("<div class=\"col-sm-8\">"+ category[i].descrizioneCat +"<a href=\"course_category.html?id="+category[i].id+"\">Vedi corsi</a></div>");
                 $("#categorydata").append("</div>");
             }
             

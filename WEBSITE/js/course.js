@@ -33,11 +33,10 @@ function Ready(){
         success: function(response){
             console.log("response="+response);
             var courses=JSON.parse(response);
-            $("#title").html("<strong><h2>"+courses[0].nome+"<br><small>"+courses[0].nomeCat+"</small></h2></strong>");
+            $("#mytitle").html("<strong><h2>"+courses[0].nome+"<br><small><a href=\"course_category.html?id="+courses[0].categoria+"\">"+courses[0].nomeCat+"</a></small></h2></strong>");
             //cambio l'attributo src del tag img
             $("#course-image").attr("src", courses[0].img1);
-//----------------------------------------TODO DA SISTEMARE CON L'ID DA SISTEMATO------------------------------------------------------------
-            //$("#course-image").attr("src", courses[0].img2);
+            $("#course-image2").attr("src", courses[0].img2);
             $("#course-desc").html("<strong>Descrizione:</strong><br>"+courses[0].descrizione);
 //-------------------------MANCA IL TARGET NEL DB-------------------------------
             

@@ -9,7 +9,7 @@ if(mysqli_connect_errno()){
 }
 else{
     //echo $categoryId; //mi fa restituire il valore del post
-    $myquery = " SELECT * FROM course where categoria=".$categoryId;
+    $myquery = " SELECT * FROM course join category on course.categoria=category.id where categoria=".$categoryId;
 //    echo $myquery; //restituisce la query
     $result = $mysqli->query($myquery);
     if($result->num_rows >0)
