@@ -1,151 +1,152 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jscript.js"></script>
-</head>
-<body>
-    <div class="container" id="wrapper">
-        <div class="img-responsive hidden-xs hidden-sm" id="headerBanner">
-            <img class="img-responsive" id="banner" src="img/banner.jpg">
-        </div>
-        <div id="content">
-            <nav class="navbar navbar-inverse" id="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img class="visible-lg img-circle" id="logohome" src="img/logoBigBym.jpg">
-                            <img class="visible-sm visible-md img-circle" id="logohomesmall" src="img/logoBigBymSmall.jpg">
-                            <img class="visible-xs" id="logomobile" src="img/logomobile.png">
-                        </a>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jscript.js"></script>
+        <title id="title">Big Gym</title>
+    </head>
+    <body>
+        <div class="container" id="wrapper">
+            <div class="img-responsive hidden-xs hidden-sm" id="headerBanner">
+                <img class="img-responsive" id="banner" src="img/banner.jpg">
+            </div>
+            <div id="content">
+                <nav class="navbar navbar-inverse" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img class="visible-lg img-circle" id="logohome" src="img/logoBigBym.jpg">
+                                <img class="visible-sm visible-md img-circle" id="logohomesmall" src="img/logoBigBymSmall.jpg">
+                                <img class="visible-xs" id="logomobile" src="img/logomobile.png">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                            <li class="active visible-lg"><a href="index.html">Home</a></li>
+                            <li><a href="all_categories.html" id="navbar-link">Categorie</a></li>
+                            <li><a href="all_courses.html" id="navbar-link">Corsi</a></li>
+                            <li><a href="all_instructors.html" id="navbar-link">Istruttori</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Testimonial</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Attrezzature</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Orario</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
+                            <li><a href="location.html" id="navbar-link">Dove Siamo</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                        <li class="active visible-lg"><a href="index.html">Home</a></li>
-                        <li><a href="all_categories.html" id="navbar-link">Categorie</a></li>
-                        <li><a href="all_courses.html" id="navbar-link">Corsi</a></li>
-                        <li><a href="all_instructors.html" id="navbar-link">Istruttori</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Testimonial</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Attrezzature</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Orario</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
-                        <li><a href="location.html" id="navbar-link">Dove Siamo</a></li>
-                        </ul>
+                </nav>
+                <div class="row" id="indexTable">
+                    <div class="col-md-12" id="page-title">
+                        <h2>BENVENUTO NEL NOSTRO CENTRO</h2><br>
+                        <h5>La Big Bym è una struttura per il tuo benessere e modellata 
+                            sulle tue esigenze.<br><br>
+                            La qualità degli istruttori, la tecnologia degli attrezzi ed i 
+                            servizi offerti sono il punto di riferimento per chi vuole star 
+                            bene e raggiungere i propri risultati</h5>
                     </div>
                 </div>
-            </nav>
-            <div class="row" id="indexTable">
-                <div class="col-md-12" id="page-title">
-                    <h2>BENVENUTO NEL NOSTRO CENTRO</h2><br>
-                    <h5>La Big Bym è una struttura per il tuo benessere e modellata 
-                        sulle tue esigenze.<br><br>
-                        La qualità degli istruttori, la tecnologia degli attrezzi ed i 
-                        servizi offerti sono il punto di riferimento per chi vuole star 
-                        bene e raggiungere i propri risultati</h5>
+                <div class="row" id="indexTable" style="margin-bottom: 50px; text-align: center;">
+                    <div class="col-sm-4">
+                        <h3><b>La Nostra Storia</b></h3><br>
+                        <h5>Dal 1963 nel cuore di Monza, 3500 metri quadrati dedicati allo sport e al benessere</h5><br>
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yZ15vCGuvH0" allowfullscreen></iframe>
+                        </div>
+                        <h5>La testimonianza del nostro fondatore</h5>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3><b>I Nostri Spazi</b></h3><br>
+                        <h5>Una fotogallery delle nostre aree</h5><br>
+                        <div id="myCarousel" class="carousel slide img-responsive" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="./img/pool.jpg" alt="Pool">
+                            </div>
+
+                            <div class="item">
+                              <img src="./img/Room 1.jpg" alt="Room 1">
+                            </div>
+
+                            <div class="item">
+                              <img src="./img/room 4.jpg" alt="Room 4">
+                            </div>
+
+                            <div class="item">
+                              <img src="./img/room 5.jpg" alt="Room 5">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" id="carousel-link">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" id="carousel-link">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3><b>Cerchi di più?</b></h3><br>
+                        <h5>Non hai trovato le informazioni che cerchi?<br>Mandaci una mail!</h5><br>
+                        Richiesta informazioni:<br><br>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" form="email">Email:</label>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group" id="index-form">
+                              <label class="sr-only" form="pwd">Nome e Cognome:</label>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">          
+                                    <input type="text" class="form-control" id="pwd" placeholder="Nome Cognome">
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group" id="index-form">
+                                <label class="sr-only" form="comment">Note:</label>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">          
+                                    <textarea class="form-control" rows="5" id="comment" style="resize:none" placeholder="Note"></textarea>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group" id="index-form">        
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <button type="submit" class="btn btn-default">Invia</button>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="row" id="indexTable" style="margin-bottom: 50px; text-align: center;">
-                <div class="col-sm-4">
-                    <h3><b>La Nostra Storia</b></h3><br>
-                    <h5>Dal 1963 nel cuore di Monza, 3500 metri quadrati dedicati allo sport e al benessere</h5><br>
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yZ15vCGuvH0" allowfullscreen></iframe>
-                    </div>
-                    <h5>La testimonianza del nostro fondatore</h5>
-                </div>
-                <div class="col-sm-4">
-                    <h3><b>I Nostri Spazi</b></h3><br>
-                    <h5>Una fotogallery delle nostre aree</h5><br>
-                    <div id="myCarousel" class="carousel slide img-responsive" data-ride="carousel">
-                      <!-- Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                      </ol>
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                          <img src="./img/pool.jpg" alt="Pool">
-                        </div>
-
-                        <div class="item">
-                          <img src="./img/Room 1.jpg" alt="Room 1">
-                        </div>
-
-                        <div class="item">
-                          <img src="./img/room 4.jpg" alt="Room 4">
-                        </div>
-
-                        <div class="item">
-                          <img src="./img/room 5.jpg" alt="Room 5">
-                        </div>
-                      </div>
-
-                      <!-- Left and right controls -->
-                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" id="carousel-link">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" id="carousel-link">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <h3><b>Cerchi di più?</b></h3><br>
-                    <h5>Non hai trovato le informazioni che cerchi?<br>Mandaci una mail!</h5><br>
-                    Richiesta informazioni:<br><br>
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label class="sr-only" form="email">Email:</label>
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                            <div class="col-sm-2"></div>
-                        </div>
-                        <div class="form-group" id="index-form">
-                          <label class="sr-only" form="pwd">Nome e Cognome:</label>
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-8">          
-                                <input type="text" class="form-control" id="pwd" placeholder="Nome Cognome">
-                            </div>
-                            <div class="col-sm-2"></div>
-                        </div>
-                        <div class="form-group" id="index-form">
-                            <label class="sr-only" form="comment">Note:</label>
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-8">          
-                                <textarea class="form-control" rows="5" id="comment" style="resize:none" placeholder="Note"></textarea>
-                            </div>
-                            <div class="col-sm-2"></div>
-                        </div>
-                        <div class="form-group" id="index-form">        
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-8">
-                                <button type="submit" class="btn btn-default">Invia</button>
-                            </div>
-                            <div class="col-sm-2"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

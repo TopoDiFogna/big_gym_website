@@ -241,7 +241,6 @@ a:hover {
     }
 }
 
-
 #course-instr-image{
     padding-bottom: 10px;
     max-height: 200px;
@@ -328,12 +327,12 @@ a:hover {
 #course-row{
     padding:5px;
     border-bottom: solid 1px;
+    border-color: #0080ff;
 }
 
 #nameCol, #livCol{
     font-weight: bold;
     text-align: center;
-    vertical-align: middle;
 }
 
 #nameCol, #descCol, #livCol{
@@ -342,5 +341,34 @@ a:hover {
     padding-bottom: 0px;
 }
 #descCol{
+    text-align: justify;
+}
+
+
+/*    All Category    */
+
+#categorydata{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#category-row{
+    padding:5px;
+    border-bottom: solid 1px;
+    border-color: #0080ff;
+}
+#nameCat, #descCat, #vediCorsi{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#nameCat, #vediCorsi{
+    font-weight: bold;
+    text-align: center;
+}
+
+#deacCat{
     text-align: justify;
 }

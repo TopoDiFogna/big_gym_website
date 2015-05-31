@@ -14,67 +14,113 @@ mi mancano nel db il campo per il target! Devo implementarli tutti XO
 
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/course.js"></script>
-</head>
-<body>
-    <div class="container" id="wrapper">
-        <div id="content">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img class="img-circle hidden-xs" id="logo" src="img/logoBigBymSmall.jpg">
-                            <img class="visible-xs" id="logomobile" src="img/logomobile.png">
-                        </a>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/course.js"></script>
+         <title id="title">Big Gym</title>
+    </head>
+    <body>
+        <div class="container" id="wrapper">
+            <div id="content">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-circle hidden-xs" id="logo" src="img/logoBigBymSmall.jpg">
+                                <img class="visible-xs" id="logomobile" src="img/logomobile.png">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                            <li class="visible-lg"><a href="index.html">Home</a></li>
+                            <li><a href="all_categories.html" id="navbar-link">Categorie</a></li>
+                            <li><a href="all_courses.html" id="navbar-link">Corsi</a></li>
+                            <li><a href="all_instructors.html" id="navbar-link">Istruttori</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Testimonial</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Attrezzature</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Orario</a></li>
+                            <li><a href="not_implemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
+                            <li><a href="location.html" id="navbar-link">Dove Siamo</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                        <li class="visible-lg"><a href="index.html">Home</a></li>
-                        <li><a href="all_categories.html" id="navbar-link">Categorie</a></li>
-                        <li><a href="all_courses.html" id="navbar-link">Corsi</a></li>
-                        <li><a href="all_instructors.html" id="navbar-link">Istruttori</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Testimonial</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Attrezzature</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Orario</a></li>
-                        <li><a href="not_implemented.html" id="navbar-link">Iscrizioni e Costi</a></li>
-                        <li><a href="location.html" id="navbar-link">Dove Siamo</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="row" id="course-divs">
-                <div class="col-md-12" id="page-title">
-                </div>
-            </div>
-            <div class="row" id="course-divs">
-                <div class="col-md-3 col-xs-12" id="course-sched">
-                    Orario
-                </div>
-                <div class="col-md-9 col-xs-12">
-                    <div class="col-md-6 col-xs-12">
-                        <img class="img-responsive center-block" id="course-image">
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <img class="img-responsive center-block hidden-xs hidden-sm" id="course-image2" >
+                </nav>
+                <div class="row" id="course-divs">
+                    <div class="col-md-12" id="page-title">
                     </div>
                 </div>
-            </div>
-            <div class="row" id="course-divs">
-                <div class="col-md-3  hidden-xs hidden-sm" id="course-reg">
+                <div class="row" id="course-divs">
+                    <div class="col-md-3 col-xs-12" id="course-sched">
+                        Orario
+                    </div>
+                    <div class="col-md-9 col-xs-12">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive center-block" id="course-image">
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive center-block hidden-xs hidden-sm" id="course-image2" >
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="course-divs">
+                    <div class="col-md-3  hidden-xs hidden-sm" id="course-reg">
+                        <p>Registrati al Corso:</p>
+                        <form>
+                            <div class="form-group">
+                                <label class="sr-only" form="mail">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                                <div class="form-group">
+                                <label class="sr-only" form="name">Nome:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Nome">
+                            </div>
+                                <div class="form-group">
+                                <label class="sr-only" form="surname">Cognome:</label>
+                                <input type="text" class="form-control" id="surname" placeholder="Cognome">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" form="birthday">Data di Nascita:</label>
+                                <input type="date" class="form-control" id="birthdate">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12" id="course-desc">
+                                <strong>Descrizione:</strong><br>
+                                L'idrobike consiste nella pratica dello spinning in piscina: la bicicletta che si utilizza è una speciale bicicletta da spinning in acciaio, concepita per sfruttare e beneficiare al massimo della resistenza dell' acqua. Non è necessario saper nuotare per frequentare un corso di hydrobike: l' acqua infatti raggiunge l'altezza della vita, spalle e testa rimagono fuori, solo le ginocchia restano sempre sommerse durante gli esercizi.
+                            </div> 
+                            <div class="col-md-12" id="course-target">
+                                <strong>Target:</strong><br>
+                                La pratica dell'hydrobike è l'ideale per chi presenta problemi di sovrappeso e di ritenzione idrica: è un' attività fisica di tipo aerobico quindi permette un buon consumo di calorie. Inoltre, un buon allenamento agisce positivamente sul sistema cardio-vascolare rinforzando il cuore, la resistenza alla fatica e migliorando la circolazione.
+                            </div>
+                        </div>
+                        <div class="row" id="course-instr">
+                            <div class="col-md-4 col-xs-12">
+                                <strong>Istruttore del Corso:</strong>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <a id="link-im1" href="#"><img class="img-responsive  center-block" id="course-instr-image"></a>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <a id="link-im2" href="#"><img class="img-responsive  center-block" id="course-instr-image2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  visible-xs visible-sm" id="course-reg">
                     <p>Registrati al Corso:</p>
                     <form>
                         <div class="form-group">
@@ -95,52 +141,7 @@ mi mancano nel db il campo per il target! Devo implementarli tutti XO
                         </div>
                     </form>
                 </div>
-                <div class="col-md-8 col-xs-12">
-                    <div class="row">
-                        <div class="col-md-12" id="course-desc">
-                            <strong>Descrizione:</strong><br>
-                            L'idrobike consiste nella pratica dello spinning in piscina: la bicicletta che si utilizza è una speciale bicicletta da spinning in acciaio, concepita per sfruttare e beneficiare al massimo della resistenza dell' acqua. Non è necessario saper nuotare per frequentare un corso di hydrobike: l' acqua infatti raggiunge l'altezza della vita, spalle e testa rimagono fuori, solo le ginocchia restano sempre sommerse durante gli esercizi.
-                        </div> 
-                        <div class="col-md-12" id="course-target">
-                            <strong>Target:</strong><br>
-                            La pratica dell'hydrobike è l'ideale per chi presenta problemi di sovrappeso e di ritenzione idrica: è un' attività fisica di tipo aerobico quindi permette un buon consumo di calorie. Inoltre, un buon allenamento agisce positivamente sul sistema cardio-vascolare rinforzando il cuore, la resistenza alla fatica e migliorando la circolazione.
-                        </div>
-                    </div>
-                    <div class="row" id="course-instr">
-                        <div class="col-md-4 col-xs-12">
-                            <strong>Istruttore del Corso:</strong>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                            <a id="link-im1" href="#"><img class="img-responsive  center-block" id="course-instr-image"></a>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                            <a id="link-im2" href="#"><img class="img-responsive  center-block" id="course-instr-image2"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3  visible-xs visible-sm" id="course-reg">
-                <p>Registrati al Corso:</p>
-                <form>
-                    <div class="form-group">
-                        <label class="sr-only" form="mail">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                        <div class="form-group">
-                        <label class="sr-only" form="name">Nome:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Nome">
-                    </div>
-                        <div class="form-group">
-                        <label class="sr-only" form="surname">Cognome:</label>
-                        <input type="text" class="form-control" id="surname" placeholder="Cognome">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" form="birthday">Data di Nascita:</label>
-                        <input type="date" class="form-control" id="birthdate">
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
