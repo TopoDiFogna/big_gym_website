@@ -372,3 +372,59 @@ a:hover {
 #deacCat{
     text-align: justify;
 }
+
+/**      Category     **/
+#prev{
+    text-align: right;
+}
+
+#next{
+    text-align: left;
+}
+
+@media screen and (max-width: 991px){
+    #prev{
+        padding-left: 1px;
+        padding-right: 1px;
+/*        margin-left: 1px;*/
+        text-align: right;
+    }
+
+    #next{
+        padding-left: 1px;
+        padding-right: 1px;
+/*        margin-right: 1px;*/
+        text-align: left;
+    }
+    
+    #hidden-div{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+#category-img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    max-height: 200px;
+}
+
+#category-text{
+    padding-left: 25px;
+}
+
+#category-desc, #category-benefit{
+    padding-left: 15px;
+}
+
+#category-desc{
+    padding-bottom: 10px;
+}
+
+#category-instr{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 150px;
+    padding: 15px;
+}
