@@ -1,7 +1,7 @@
 <?php
 $courseName=$_POST['key'];
 
-$mysqli = new mysqli("localhost","root","","big_gym");
+$mysqli = new mysqli("localhost", "biggymproject", "", "my_biggymproject");
 
 if(mysqli_connect_errno()){
     echo "Connection failed: ".mysqli_connect_error();
