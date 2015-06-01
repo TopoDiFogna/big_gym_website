@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 var QueryString = function () {
       // This function is anonymous, is executed immediately and 

@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 function Ready(){
 //    console.log("dentro il ready");
