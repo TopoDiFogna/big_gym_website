@@ -1,4 +1,7 @@
 <?php
+
+header("Access-Control-Allow-Origin: *"); 
+
 $courseName=$_POST['key'];
 
 $mysqli = new mysqli("localhost", "biggymproject", "", "my_biggymproject");

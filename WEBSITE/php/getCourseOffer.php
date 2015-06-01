@@ -1,4 +1,7 @@
 <?php
+
+header("Access-Control-Allow-Origin: *"); 
+
 $categoryId=$_POST['category'];
 
 $mysqli = new mysqli("localhost", "biggymproject", "", "my_biggymproject");
