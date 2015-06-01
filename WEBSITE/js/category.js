@@ -65,21 +65,21 @@ function Ready(){
 
 function insertInstructor(data){
     //prendo i dati dei relativi istruttori
-            $.ajax({
-                method: "POST",
-                crossDomain: true,
-                url:"http://biggymproject.altervista.org/php/getInstructor.php",
-                data: {'instructor': 0},
-                success: function(response){
-                    console.log("response="+response);
-                    var instructor=JSON.parse(response);
-                    var countInstructor=1;
-                    for(var i=0; i<instructor.length; i++){
-                        if(instructor[i].categoria== data[0].id){
-                            $("#category-instr"+countInstructor).attr("src", instructor[i].img);
-                            countInstructor++;
-                        }
-                    }
+    $.ajax({
+        method: "POST",
+        crossDomain: true,
+        url:"http://biggymproject.altervista.org/php/getInstructor.php",
+        data: {'instructor': 0},
+        success: function(response){
+            console.log("response="+response);
+            var instructor=JSON.parse(response);
+            var countInstructor=1;
+            for(var i=0; i<instructor.length; i++){
+                if(instructor[i].categoria== data[0].id){
+                    $("#instructor"+countInstructor).html("<a href=\"instructor.html?id="+instructor[i].id_istruttore+"\"><img class=\"img-responsive\" id=\"category-instr1\" src=\""+instructor[i].img+"\"></a>");
+                    countInstructor++;
                 }
-            });    
+            }
+        }
+    });    
 }
