@@ -260,6 +260,12 @@ a:hover {
     padding-top: 20px;
 }
 
+/** Course Schedule **/
+#table-sched{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 /*    Course Category    */
 @media screen and (min-width: 992px){
     #categories{
@@ -391,14 +397,12 @@ a:hover {
     #prev{
         padding-left: 1px;
         padding-right: 1px;
-/*        margin-left: 1px;*/
         text-align: right;
     }
 
     #next{
         padding-left: 1px;
         padding-right: 1px;
-/*        margin-right: 1px;*/
         text-align: left;
     }
     
