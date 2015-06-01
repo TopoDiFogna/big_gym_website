@@ -5,7 +5,7 @@ function Ready(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url: "./php/getInstructor.php",
+        url: "http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor':0},
         success: function(response) {
             console.log("response="+response);

@@ -68,7 +68,7 @@ function levelOrder(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourse.php",
+        url:"http://biggymproject.altervista.org/php/getCourse.php",
         data: {'key':"liv"},
         success: function(response){
             

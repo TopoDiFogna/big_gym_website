@@ -27,7 +27,7 @@ function Ready(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourseOffer.php",
+        url:"http://biggymproject.altervista.org/php/getCourseOffer.php",
         data: {'category':QueryString.id},
         success: function(response){
             console.log("response="+response);

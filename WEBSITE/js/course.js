@@ -29,7 +29,7 @@ function Ready(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourse.php",
+        url:"http://biggymproject.altervista.org/php/getCourse.php",
         data: {'key': QueryString.name.replace("%20"," ")},
         success: function(response){
             console.log("response="+response);
@@ -46,7 +46,7 @@ function Ready(){
             $.ajax({
                 method: "POST",
                 crossDomain: true,
-                url:"./php/getInstructor.php",
+                url:"http://biggymproject.altervista.org/php/getInstructor.php",
                 data: {'instructor': courses[0].istruttore},
                 success: function(response){
                     console.log("response="+response);
@@ -68,7 +68,7 @@ function instructor2(data){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getInstructor.php",
+        url:"http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor': data[0].istruttore2},
         success: function(response){
             console.log("response="+response);
