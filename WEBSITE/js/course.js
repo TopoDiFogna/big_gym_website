@@ -42,7 +42,7 @@ function Ready(){
             //descrizione
             $("#course-desc").html("<strong>Descrizione:</strong><br>"+courses[0].descrizione);
             //target
-            $("#course-target").html(" <strong>Target:</strong><br>"+courses[0].target);
+            $("#course-target").html("<strong>Target:</strong><br>"+courses[0].target);
             //prendo i dati dei relativi istruttori
             $.ajax({
                 method: "POST",
