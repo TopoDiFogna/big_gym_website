@@ -1,4 +1,5 @@
 <?php
+$categoryId=$_POST['category'];
 
 $mysqli = new mysqli("localhost", "root", "", "big_gym");
 
@@ -7,13 +8,18 @@ if (mysqli_connect_errno()) { //verify connection
     exit(); //do nothing else 
 }
 else {
-    
-//    echo "Successful connection"; // connection ok
+    $myquery="";
+    switch($categoryId){
+        case 0:
+            $myquery = " SELECT * FROM category";
+            break;
+        default:
+            $myquery = " SELECT * FROM category where id=".$categoryId;
+            break;
+    }
 
-    # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM category";
-    //query execution
-    $result = $mysqli->query($query);
+    //esecuzione myquery
+    $result = $mysqli->query($myquery);
     //if there are data available
 //    echo $result->num_rows;
     if($result->num_rows >0)

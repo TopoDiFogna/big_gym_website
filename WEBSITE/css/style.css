@@ -403,14 +403,14 @@ a:hover {
     }
 }
 
-#category-img{
+#category-img, #category-img2{
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
     max-height: 200px;
 }
 
-#category-text{
+#category-text, #category-available{
     padding-left: 25px;
 }
 
@@ -422,7 +422,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-#category-instr{
+#category-instr1, #category-instr2{
     margin-left: auto;
     margin-right: auto;
     max-height: 150px;
