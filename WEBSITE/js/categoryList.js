@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 function Ready(){
 //    console.log("dentro il ready");
@@ -15,7 +16,7 @@ function Ready(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "./php/getCategory.php", //Relative or absolute path to file.php file
+        url: "http://biggymproject.altervista.org/php/getCategory.php", //Relative or absolute path to file.php file
         data: {category:0},
         success: function(response) {
             var category=JSON.parse(response);

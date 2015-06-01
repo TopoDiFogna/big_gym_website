@@ -1,7 +1,10 @@
 <?php
+
+header("Access-Control-Allow-Origin: *"); 
+
 $categoryId=$_POST['category'];
 
-$mysqli = new mysqli("localhost", "root", "", "big_gym");
+$mysqli = new mysqli("localhost", "biggymproject", "", "my_biggymproject");
 
 if (mysqli_connect_errno()) { //verify connection
     echo "Error to connect to DBMS: ".mysqli_connect_error(); //notify error

@@ -1,7 +1,10 @@
 <?php
+
+header("Access-Control-Allow-Origin: *"); 
+
 $instructorId=$_POST['instructor'];
 
-$mysqli = new mysqli("localhost", "root", "", "big_gym");
+$mysqli = new mysqli("localhost", "biggymproject", "", "my_biggymproject");
 
 if(mysqli_connect_errno()){
     echo "Connection Failed: ".mysqli_connect_error();

@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 var QueryString = function () {
       // This function is anonymous, is executed immediately and 
@@ -28,7 +29,7 @@ function Ready(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url: "./php/getInstructor.php",
+        url: "http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor':QueryString.id},
         success: function(response) {
             console.log("response="+response);
@@ -71,7 +72,7 @@ function insertCategory(data){
      $.ajax({
         method: "POST",
         crossDomain: true,
-        url: "./php/getCategory.php",
+        url: "http://biggymproject.altervista.org/php/getCategory.php",
         success: function(response) {
             console.log("response="+response);
             var category=JSON.parse(response);

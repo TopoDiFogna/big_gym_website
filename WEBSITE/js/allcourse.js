@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 
 //var QueryString = function () {
@@ -41,7 +42,7 @@ function alfabeticOrder(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourse.php",
+        url:"http://biggymproject.altervista.org/php/getCourse.php",
         data: {'key':"alfa"},
         success: function(response){
             
@@ -68,7 +69,7 @@ function levelOrder(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourse.php",
+        url:"http://biggymproject.altervista.org/php/getCourse.php",
         data: {'key':"liv"},
         success: function(response){
             

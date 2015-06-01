@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 var QueryString = function () {
       // This function is anonymous, is executed immediately and 
@@ -29,7 +30,7 @@ function Ready(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourse.php",
+        url:"http://biggymproject.altervista.org/php/getCourse.php",
         data: {'key': QueryString.name.replace("%20"," ")},
         success: function(response){
             console.log("response="+response);
@@ -41,12 +42,12 @@ function Ready(){
             //descrizione
             $("#course-desc").html("<strong>Descrizione:</strong><br>"+courses[0].descrizione);
             //target
-            $("#course-target").html(" <strong>Target:</strong><br>"+courses[0].target);
+            $("#course-target").html("<strong>Target:</strong><br>"+courses[0].target);
             //prendo i dati dei relativi istruttori
             $.ajax({
                 method: "POST",
                 crossDomain: true,
-                url:"./php/getInstructor.php",
+                url:"http://biggymproject.altervista.org/php/getInstructor.php",
                 data: {'instructor': courses[0].istruttore},
                 success: function(response){
                     console.log("response="+response);
@@ -68,7 +69,7 @@ function instructor2(data){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getInstructor.php",
+        url:"http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor': data[0].istruttore2},
         success: function(response){
             console.log("response="+response);

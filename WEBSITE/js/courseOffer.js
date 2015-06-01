@@ -1,4 +1,5 @@
 $(document).ready(Ready);
+document.addEventListener("deviceready", Ready, false);
 
 var QueryString = function () {
       // This function is anonymous, is executed immediately and 
@@ -27,7 +28,7 @@ function Ready(){
     $.ajax({
         method: "POST",
         crossDomain: true,
-        url:"./php/getCourseOffer.php",
+        url:"http://biggymproject.altervista.org/php/getCourseOffer.php",
         data: {'category':QueryString.id},
         success: function(response){
             console.log("response="+response);
