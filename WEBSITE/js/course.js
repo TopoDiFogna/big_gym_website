@@ -38,6 +38,7 @@ function Ready(){
             //linko la pagina orario
             $("#course-sched").html("<a href=\"schedule.html?name="+courses[0].nome+"\">Orario</a>");
             
+            $("#title").append(" - "+courses[0].nome);
             $("#page-title").html("<strong><h2>"+courses[0].nome+"<br><small><a href=\"course_category.html?id="+courses[0].categoria+"\">"+courses[0].nomeCat+"</a></small></h2></strong>");
             //cambio l'attributo src del tag img
             $("#course-image").attr("src", courses[0].img1);

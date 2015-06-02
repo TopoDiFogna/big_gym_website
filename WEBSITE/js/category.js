@@ -36,6 +36,7 @@ function Ready(){
         success: function(response){
             console.log("response="+response);
             category=JSON.parse(response);
+            $("#title").append(" - "+category[0].nomeCat);
             $("#page-title").html("<strong><h2>"+category[0].nomeCat+"<br><small><a href=\"course_category.html?id="+category[0].id+"\">Corsi Offerti</a></small></h2></strong>");
             var prev=0;
             var next=0;

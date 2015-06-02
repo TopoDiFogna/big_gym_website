@@ -41,6 +41,7 @@ function Ready(){
             $("#instructor-name").html("<h2>"+instructors[0].nomeIstruttore+"</h2>");
             $("#instructor-img").attr("src", instructors[0].img);
             $("#instructor-age").html(instructors[0].eta);
+            $("#instructor-place-birth").html(instructors[0].luogo);
             $("#instructor-high").html(instructors[0].altezza);
             $("#instructor-curriculum").html(instructors[0].storia);
             
