@@ -35,6 +35,9 @@ function Ready(){
         success: function(response){
             console.log("response="+response);
             courses=JSON.parse(response);
+            //linko la pagina orario
+            $("#course-sched").html("<a href=\"schedule.html?name="+courses[0].nome+"\">Orario</a>");
+            
             $("#page-title").html("<strong><h2>"+courses[0].nome+"<br><small><a href=\"course_category.html?id="+courses[0].categoria+"\">"+courses[0].nomeCat+"</a></small></h2></strong>");
             //cambio l'attributo src del tag img
             $("#course-image").attr("src", courses[0].img1);
@@ -59,7 +62,9 @@ function Ready(){
                         instructor2(courses);
                     }
                 }
-            });            
+            });   
+            $("#come-back").html("<a href=\"course.html?name="+courses[0].nome+"\">Torna al corso</a>");
+            $("#table-course").html(courses[0].orario);
         }
     });
     
