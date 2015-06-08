@@ -70,7 +70,7 @@ function Ready(){
         }
     });
     }else{
-        window.history.back();
+        navigator.app.backHistory();
     }
     
 }
