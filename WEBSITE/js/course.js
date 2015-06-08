@@ -25,6 +25,7 @@ var QueryString = function () {
 } ();
 
 function Ready(){
+    if(window.location.search.substring(1) != ""){
     var courses= {};
     //prendo i dati del corso
     $.ajax({
@@ -68,6 +69,9 @@ function Ready(){
             $("#table-course").html(courses[0].orario);
         }
     });
+    }else{
+        window.history.back();
+    }
     
 }
 
