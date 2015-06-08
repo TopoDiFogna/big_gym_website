@@ -70,7 +70,8 @@ function Ready(){
         }
     });
     }else{
-        navigator.app.backHistory();
+//        navigator.app.backHistory();
+        $("#content").html("L'url è vuoto");
     }
     
 }
