@@ -64,6 +64,8 @@ function Ready(){
                     }
                 }
             });   
+            
+            //creo la pagine dello sheduling del corso
             $("#come-back").html("<a href=\"course.html?name="+courses[0].nome+"\">Torna al corso</a>");
             $("#table-course").html(courses[0].orario);
         }
