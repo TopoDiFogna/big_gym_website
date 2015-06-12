@@ -22,10 +22,9 @@ var QueryString = function () {
         }
       } 
         return query_string;
-} ();
+} ();  //() esegue la funzione direttamente
 
 function Ready(){
-    console.log(QueryString.id);
     var category= {};
     //prendo i dati del corso
     $.ajax({
@@ -34,7 +33,6 @@ function Ready(){
         url:"http://biggymproject.altervista.org/php/getCategory.php",
         data: {'category': QueryString.id},
         success: function(response){
-            console.log("response="+response);
             category=JSON.parse(response);
             $("#title").append(" - "+category[0].nomeCat);
             $("#page-title").html("<strong><h2>"+category[0].nomeCat+"<br><small><a href=\"course_category.html?id="+category[0].id+"\">Corsi Offerti</a></small></h2></strong>");
@@ -72,7 +70,6 @@ function insertInstructor(data){
         url:"http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor': 0},
         success: function(response){
-            console.log("response="+response);
             var instructor=JSON.parse(response);
             var countInstructor=1;
             for(var i=0; i<instructor.length; i++){

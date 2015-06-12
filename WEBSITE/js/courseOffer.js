@@ -31,7 +31,6 @@ function Ready(){
         url:"http://biggymproject.altervista.org/php/getCourseOffer.php",
         data: {'category':QueryString.id},
         success: function(response){
-            console.log("response="+response);
             var courses=JSON.parse(response);
             $("#page-title").html("<h2>Tutti i corsi di: <strong>"+courses[0].nomeCat+"</strong></h2>");
             for(var i=0;i<courses.length;i++){

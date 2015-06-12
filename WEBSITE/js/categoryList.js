@@ -1,20 +1,9 @@
 $(document).ready(Ready);
-document.addEventListener("deviceready", Ready, false);
+document.addEventListener("deviceready", Ready, false);//phonegap
 
-function Ready(){
-//    console.log("dentro il ready");
-//    $.getJSON( "./php/getCategory.php", function(data){
-//        var items = [];
-//        console.log("dentro getJSON");
-//        $.each( data, function( id, name, desc ) {
-//            console.log("dentro l'each");
-//            $(".content").append("id: "+id);
-//        });
-//    });
-    
+function Ready(){    
     $.ajax({
         method: "POST",
-        //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
         url: "http://biggymproject.altervista.org/php/getCategory.php", //Relative or absolute path to file.php file
         data: {category:0},

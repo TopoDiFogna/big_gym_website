@@ -33,7 +33,6 @@ function Ready(){
         url:"http://biggymproject.altervista.org/php/getCourse.php",
         data: {'key': QueryString.name.replace("%20"," ")},
         success: function(response){
-            console.log("response="+response);
             courses=JSON.parse(response);
             //linko la pagina orario
             $("#course-sched").html("<a href=\"schedule.html?name="+courses[0].nome+"\">Orario</a>");
@@ -54,7 +53,6 @@ function Ready(){
                 url:"http://biggymproject.altervista.org/php/getInstructor.php",
                 data: {'instructor': courses[0].istruttore},
                 success: function(response){
-                    console.log("response="+response);
                     var instructor=JSON.parse(response);
                     $("#course-instr-image").attr("src", instructor[0].img);
                     $("#link-im1").attr("href", "instructor.html?id="+instructor[0].id_istruttore+"\"");
@@ -80,7 +78,6 @@ function instructor2(data){
         url:"http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor': data[0].istruttore2},
         success: function(response){
-            console.log("response="+response);
             var instructor=JSON.parse(response);
             $("#course-instr-image2").attr("src", instructor[0].img);
             $("#link-im2").attr("href", "instructor.html?id="+instructor[0].id_istruttore+"\"");

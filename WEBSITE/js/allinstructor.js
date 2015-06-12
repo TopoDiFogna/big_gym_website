@@ -9,7 +9,6 @@ function Ready(){
         url: "http://biggymproject.altervista.org/php/getInstructor.php",
         data: {'instructor':0},
         success: function(response) {
-            console.log("response="+response);
             var instructors=JSON.parse(response);
             var nPremi=0;
             for(var i=0;i<instructors.length;i++){

@@ -1,5 +1,3 @@
-var GIndex=1;
-
 $(document).ready(Ready);
 
 function Ready(){
